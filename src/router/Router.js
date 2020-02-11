@@ -9,6 +9,8 @@ import {
  export default class App extends React.Component {
    
    render() {
+      console.log(process.env.PUBLIC_URL)
+      console.log('tes')
       return (
          <Router>
             <Switch>
@@ -19,4 +21,5 @@ import {
       )
    }
 }
-
+// https://github.com/rockchalkwushock/rcws-development/blob/master/src/Routes.js
+// basename={`${process.env.PUBLIC_URL}/`}
