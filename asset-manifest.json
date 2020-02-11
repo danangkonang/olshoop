@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/olshoop/static/css/main.3385d9a9.chunk.css",
-    "main.js": "/olshoop/static/js/main.a75faaf9.chunk.js",
-    "main.js.map": "/olshoop/static/js/main.a75faaf9.chunk.js.map",
+    "main.js": "/olshoop/static/js/main.041b3073.chunk.js",
+    "main.js.map": "/olshoop/static/js/main.041b3073.chunk.js.map",
     "runtime-main.js": "/olshoop/static/js/runtime-main.2e2053cb.js",
     "runtime-main.js.map": "/olshoop/static/js/runtime-main.2e2053cb.js.map",
     "static/css/2.47e06e2e.chunk.css": "/olshoop/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.67401886.chunk.js": "/olshoop/static/js/2.67401886.chunk.js",
-    "static/js/2.67401886.chunk.js.map": "/olshoop/static/js/2.67401886.chunk.js.map",
+    "static/js/2.7a276323.chunk.js": "/olshoop/static/js/2.7a276323.chunk.js",
+    "static/js/2.7a276323.chunk.js.map": "/olshoop/static/js/2.7a276323.chunk.js.map",
     "index.html": "/olshoop/index.html",
-    "precache-manifest.e9f0c56ff321e4acc3de85552b4499ea.js": "/olshoop/precache-manifest.e9f0c56ff321e4acc3de85552b4499ea.js",
+    "precache-manifest.16217c5ebd57321a3f2e145c4a8751b6.js": "/olshoop/precache-manifest.16217c5ebd57321a3f2e145c4a8751b6.js",
     "service-worker.js": "/olshoop/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/olshoop/static/css/2.47e06e2e.chunk.css.map",
     "static/css/main.3385d9a9.chunk.css.map": "/olshoop/static/css/main.3385d9a9.chunk.css.map",
-    "static/js/2.67401886.chunk.js.LICENSE.txt": "/olshoop/static/js/2.67401886.chunk.js.LICENSE.txt"
+    "static/js/2.7a276323.chunk.js.LICENSE.txt": "/olshoop/static/js/2.7a276323.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2e2053cb.js",
     "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.67401886.chunk.js",
+    "static/js/2.7a276323.chunk.js",
     "static/css/main.3385d9a9.chunk.css",
-    "static/js/main.a75faaf9.chunk.js"
+    "static/js/main.041b3073.chunk.js"
   ]
 }
