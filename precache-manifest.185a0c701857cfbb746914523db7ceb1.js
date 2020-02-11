@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d9f2e7bf81c20b2cadd09e3bc1399840",
+    "revision": "5694e9e4e1fc1049ee37433f69cccbe7",
     "url": "/olshoop/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/olshoop/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "a0ec28ad23bddcd41d41",
+    "revision": "7cf24291c96f4f3d9ed6",
     "url": "/olshoop/static/css/main.3385d9a9.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/olshoop/static/js/2.67401886.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a0ec28ad23bddcd41d41",
-    "url": "/olshoop/static/js/main.e1d1d636.chunk.js"
+    "revision": "7cf24291c96f4f3d9ed6",
+    "url": "/olshoop/static/js/main.6fc9451e.chunk.js"
   },
   {
     "revision": "17dd2ebe9be93359676e",
