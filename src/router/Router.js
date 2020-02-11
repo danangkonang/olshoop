@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-   // HashRouter,
-   BrowserRouter,
+   HashRouter,
+   // BrowserRouter,
    Switch,
    Route
  } from "react-router-dom";
@@ -14,16 +14,16 @@ import {
       // basename={`${process.env.PUBLIC_URL}/`}
       // console.log('tes')
       return (
-         <BrowserRouter 
+         <HashRouter 
          // basename={optionalString}
          // getUserConfirmation={optionalFunc}
          // hashType={optionalString}
          >
             <Switch>
-               <Route path={process.env.PUBLIC_URL+'/'} exact component={Home}/>
-               <Route path={process.env.PUBLIC_URL+'/detail'} component={Detail}/>
+               <Route path={'/'} exact component={Home}/>
+               <Route path={'/detail'} component={Detail}/>
             </Switch>
-         </BrowserRouter>
+         </HashRouter>
       )
    }
 }
