@@ -1,11 +1,18 @@
 import React, { Component,Fragment } from 'react'
 
+import Header from '../components/Header'
+import Menu from '../components/Menu'
 export default class App extends Component {
+   state={
+      product:[],
+      isLogin:true
+   }
    render(){
       return(
-         <div>
-            <h1>Home pages</h1>
-         </div>
+         <Fragment>
+            <Header isLogin={this.state.isLogin}/>
+            <Menu/>
+         </Fragment>
       )
    }
 }
