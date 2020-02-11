@@ -20,8 +20,8 @@ import {
          // hashType={optionalString}
          >
             <Switch>
-               <Route path={'/'} exact component={Home}/>
-               <Route path={'/detail'} component={Detail}/>
+               <Route path={process.env.PUBLIC_URL+'/'} exact component={Home}/>
+               <Route path={process.env.PUBLIC_URL+'/detail'} component={Detail}/>
             </Switch>
          </BrowserRouter>
       )
