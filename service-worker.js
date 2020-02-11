@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/olshoop/precache-manifest.185a0c701857cfbb746914523db7ceb1.js"
+  "/olshoop/precache-manifest.38e18d6471c5fe9b1f81efc1fb3698fe.js"
 );
 
 self.addEventListener('message', (event) => {
