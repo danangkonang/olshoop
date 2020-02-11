@@ -14,8 +14,8 @@ import {
       return (
          <Router>
             <Switch>
-               <Route path={process.env.PUBLIC_URL + '/'} exact component={Home}/>
-               <Route path={process.env.PUBLIC_URL + '/detail'} component={Detail}/>
+               <Route path={process.env.PUBLIC_URL + '/detail'} exact component={Home}/>
+               <Route path={process.env.PUBLIC_URL + '/'} component={Detail}/>
             </Switch>
          </Router>
       )
