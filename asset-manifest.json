@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/olshoop/static/css/main.d1b05096.chunk.css",
+    "main.js": "/olshoop/static/js/main.a949754e.chunk.js",
+    "main.js.map": "/olshoop/static/js/main.a949754e.chunk.js.map",
+    "runtime-main.js": "/olshoop/static/js/runtime-main.2e2053cb.js",
+    "runtime-main.js.map": "/olshoop/static/js/runtime-main.2e2053cb.js.map",
+    "static/js/2.b9de061d.chunk.js": "/olshoop/static/js/2.b9de061d.chunk.js",
+    "static/js/2.b9de061d.chunk.js.map": "/olshoop/static/js/2.b9de061d.chunk.js.map",
+    "index.html": "/olshoop/index.html",
+    "precache-manifest.d765c9b0dfbb1c1e3f638778eed88e09.js": "/olshoop/precache-manifest.d765c9b0dfbb1c1e3f638778eed88e09.js",
+    "service-worker.js": "/olshoop/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/olshoop/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.b9de061d.chunk.js.LICENSE.txt": "/olshoop/static/js/2.b9de061d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e2053cb.js",
+    "static/js/2.b9de061d.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.a949754e.chunk.js"
+  ]
+}
