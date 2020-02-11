@@ -12,6 +12,7 @@ export default class App extends Component {
          <Fragment>
             <Header isLogin={this.state.isLogin}/>
             <Menu/>
+            <a href="/detail">pindah halaman</a>
          </Fragment>
       )
    }
