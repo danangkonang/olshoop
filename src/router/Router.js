@@ -1,6 +1,7 @@
 import React from 'react';
 import {
-   BrowserRouter as Router,
+   // HashRouter,
+   BrowserRouter,
    Switch,
    Route
  } from "react-router-dom";
@@ -9,15 +10,20 @@ import {
  export default class App extends React.Component {
    
    render() {
-      console.log(process.env.PUBLIC_URL)
-      console.log('tes')
+      // console.log(process.env.PUBLIC_URL)
+      // basename={`${process.env.PUBLIC_URL}/`}
+      // console.log('tes')
       return (
-         <Router basename={`${process.env.PUBLIC_URL}/`}>
+         <BrowserRouter 
+         // basename={optionalString}
+         // getUserConfirmation={optionalFunc}
+         // hashType={optionalString}
+         >
             <Switch>
                <Route path={'/'} exact component={Home}/>
                <Route path={'/detail'} component={Detail}/>
             </Switch>
-         </Router>
+         </BrowserRouter>
       )
    }
 }
