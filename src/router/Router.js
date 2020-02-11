@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-   HashRouter,
-   // BrowserRouter,
+   // HashRouter,
+   BrowserRouter,
    Switch,
    Route
  } from "react-router-dom";
@@ -14,7 +14,7 @@ import {
       // basename={`${process.env.PUBLIC_URL}/`}
       // console.log('tes')
       return (
-         <HashRouter 
+         <BrowserRouter 
          // basename={optionalString}
          // getUserConfirmation={optionalFunc}
          // hashType={optionalString}
@@ -23,7 +23,7 @@ import {
                <Route path={'/'} exact component={Home}/>
                <Route path={'/detail'} component={Detail}/>
             </Switch>
-         </HashRouter>
+         </BrowserRouter>
       )
    }
 }
