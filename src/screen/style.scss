@@ -1,0 +1,17 @@
+p { 
+   margin: 0; 
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+   cursor: default 
+}
+p { 
+   color: rgb(214, 34, 34); 
+   text-transform: uppercase; 
+   -webkit-user-select: none; 
+   user-select: none 
+}
+      
+#root { 
+   z-index: 0 
+}

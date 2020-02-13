@@ -9,6 +9,74 @@ export default class App extends React.Component {
       x:0
    }
 
+   componentDidMount () {
+      this.mounted = true
+      // this.prepareAutoSlide()
+      // this.hideFrames()
+  
+      this.refs.wrapper.addEventListener('touchmove', this.onTouchMove, {capture: true})
+      this.refs.wrapper.addEventListener('touchend', this.onTouchEnd, {capture: true})
+      window.addEventListener('resize', this.onResize);
+    }
+  
+    componentWillUnmount () {
+      this.mounted = false
+      // this.clearAutoTimeout()
+  
+      this.refs.wrapper.removeEventListener('touchmove', this.onTouchMove, {capture: true})
+      this.refs.wrapper.removeEventListener('touchend', this.onTouchEnd, {capture: true})
+      window.removeEventListener('resize', this.onResize);
+    }
+
+    onTouchMove (e) {
+       console.log(e)
+      // if (e.touches && e.touches.length > 1) return
+      // this.clearAutoTimeout()
+  
+      // const { pageX, pageY } = (e.touches && e.touches[0]) || e
+      // let deltaX = pageX - this.state.startX
+      // let deltaY = pageY - this.state.startY
+      // this.setState({
+      //   deltaX: deltaX,
+      //   deltaY: deltaY
+      // })
+  
+      // if (this.props.axis === 'x' && Math.abs(deltaX) > Math.abs(deltaY)) {
+      //   e.preventDefault()
+      //   e.stopPropagation()
+      // }
+      // if (this.props.axis === 'y' && Math.abs(deltaY) > Math.abs(deltaX)) {
+      //   e.preventDefault()
+      //   e.stopPropagation()
+      // }
+  
+      // // when reach frames edge in non-loop mode, reduce drag effect.
+      // if (!this.props.loop) {
+      //   if (this.state.current === this.state.frames.length - 1) {
+      //     deltaX < 0 && (deltaX /= 3)
+      //     deltaY < 0 && (deltaY /= 3)
+      //   }
+      //   if (this.state.current === 0) {
+      //     deltaX > 0 && (deltaX /= 3)
+      //     deltaY > 0 && (deltaY /= 3)
+      //   }
+      // }
+  
+      // this.moveFramesBy(deltaX, deltaY)
+    }
+  
+    onTouchEnd () {
+      // const direction = this.decideEndPosition()
+      // direction && this.transitFramesTowards(direction)
+  
+      // // cleanup
+      // this.refs.wrapper.removeEventListener('mousemove', this.onTouchMove, {capture: true})
+      // this.refs.wrapper.removeEventListener('mouseup', this.onTouchEnd, {capture: true})
+      // this.refs.wrapper.removeEventListener('mouseleave', this.onTouchEnd, {capture: true})
+  
+      // setTimeout(() => this.prepareAutoSlide(), this.props.duration)
+    }
+
    goLeft =()=>{
       this.state.x===0?
       this.setState({x: this.state.x - 100*(this.state.image.length-1)})
@@ -31,10 +99,11 @@ export default class App extends React.Component {
                   <div className="col-md-4 col-12 p-0 d-flex flex-column">
 
                      <div className="content">
+
                         <div className="corousels" onTouchEnd={(e)=>console.log(e.isDefaultPrevented)}>
                            {
                               this.state.image.map(item=>(
-                                 <div className="corousel" style={{background:item%2===0?'lightseagreen':'blue',transform:`translateX(${this.state.x}%)`}} key={item}>
+                                 <div className="corousel" ref='wrapper' style={{background:item%2===0?'lightseagreen':'blue',transform:`translateX(${this.state.x}%)`}} key={item}>
                                     image
                                  </div>
                               ))
