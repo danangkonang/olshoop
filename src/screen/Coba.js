@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Carousel from './Corousel'
+import Carousel from '../screen/tes/Corousel'
+import Buttons from '../screen/tes/Buttons'
 // import './style.scss'
 export default class App extends Component {
 
@@ -21,6 +22,7 @@ export default class App extends Component {
                // auto 
                axis={this.state.axis} 
                // widgets={[Dots, Buttons]} 
+               widgets={[ Buttons]} 
                className="custom-class"
                >
                <p style={{backgroundColor: 'royalblue', height: '100%'}}>FRAME 1</p>
