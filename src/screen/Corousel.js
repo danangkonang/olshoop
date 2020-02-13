@@ -362,8 +362,9 @@ class Carousel extends React.Component {
 
    
    render () {
-      const { frames, current } = this.state
-      const { widgets, axis, loop, auto, interval } = this.props
+      // const { frames, current } = this.state
+      const { frames } = this.state
+      // const { widgets, axis, loop, auto, interval } = this.props
       const wrapperStyle = objectAssign(styles.wrapper, this.props.style)
 
       return (
