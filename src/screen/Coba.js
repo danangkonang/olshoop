@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Carousel from '../screen/tes/Corousel'
-import Buttons from '../screen/tes/Buttons'
-// import './style.scss'
+// import Buttons from '../screen/tes/Buttons'
+import Dots from '../screen/tes/Dot'
 export default class App extends Component {
 
    constructor () {
@@ -16,20 +16,19 @@ export default class App extends Component {
 
    render(){
       return(
-         <div style={{height: '100%'}}>
+         // <div style={{height: '100%'}}>
             <Carousel 
                loop 
-               // auto 
                axis={this.state.axis} 
+               widgets={[Dots]} 
                // widgets={[Dots, Buttons]} 
-               widgets={[ Buttons]} 
                className="custom-class"
                >
                <p style={{backgroundColor: 'royalblue', height: '100%'}}>FRAME 1</p>
                <p style={{backgroundColor: 'orange', height: '100%'}}>FRAME 2</p>
                <p style={{backgroundColor: 'orchid', height: '100%'}}>FRAME 3</p>
             </Carousel>
-         </div>
+         // </div>
       )
    }
 }
