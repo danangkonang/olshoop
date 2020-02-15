@@ -7,6 +7,8 @@ import {
  import Home from '../screen/Home'
  import Detail from '../screen/Detail'
  import Coba from '../screen/Coba'
+ import Login from '../screen/Login'
+ import Registrasi from '../screen/Registrasi'
  export default class App extends React.Component {
    
    render() {
@@ -16,6 +18,8 @@ import {
                <Route path={'/'} exact component={Home}/>
                <Route path={'/detail'} component={Detail}/>
                <Route path={'/coba'} component={Coba}/>
+               <Route path={'/login'} component={Login}/>
+               <Route path={'/registrasi'} component={Registrasi}/>
             </Switch>
          </BrowserRouter>
       )

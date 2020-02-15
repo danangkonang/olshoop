@@ -2,14 +2,76 @@ import React, { Component,Fragment } from 'react'
 
 import Header from '../components/Header'
 import Menu from '../components/Menu'
+import axios from 'axios'
 export default class App extends Component {
+   // https://frozen-island-74204.herokuapp.com/
    state={
       product:[],
       isLogin:true
    }
 
-   componentDidMount(){
-      
+   async componentDidMount(){
+      let data={
+         email:'dngrifai21@gmail.com',
+         password:'eeruei'
+      }
+      let url = 'http://localhost:9000/login'
+      // try{
+      //    let res =await fetch(url,{
+      //       method:'POST',
+      //       headers:{
+      //          'Content-Type': 'application/json'
+      //       },
+      //       body: JSON.stringify(data)
+      //    })
+      //    let response = await res.json()
+
+      //    console.log('success')
+      //    console.log(response)
+      //    console.log(response.response)
+      // }catch(e){
+      //    console.log('error')
+      //    console.log(e.response)
+      // }
+
+
+
+
+
+
+      // try{
+      //    const options = {
+      //       headers:{
+      //          'Content-Type': 'application/json',
+      //          // 'Authorization':`Bearer ${token}`
+      //          // 'Authorization':`Bearer jfksjafhkshkh.hdukashduash.jsdhfusdhdf`
+      //       }
+      //    };
+      //    let a = await fetch(`http://localhost:9000/products`,options);
+      //    console.log(a)
+      // }catch(e){
+      //    console.log('error btow')
+      //    console.log(JSON.stringify(e))
+         
+      // }
+
+      // let url = 'http://localhost:9000/login'
+      try{
+
+         let res =await axios({
+            method:'POST',
+            url:url,
+            data:data
+         })
+         console.log("oke")
+         console.log(res)
+
+      }catch(e){
+         console.log("error")
+         console.log(e.response.data)
+         console.log(e.response.status)
+         console.log(e.response.headers)
+      }
    }
 
    render(){
