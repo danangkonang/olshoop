@@ -2,20 +2,35 @@ import React, { Component,Fragment } from 'react'
 
 import Header from '../components/Header'
 import Menu from '../components/Menu'
-import axios from 'axios'
+
+
+// import axios from 'axios'
+// var MobileDetect = require('mobile-detect')
 export default class App extends Component {
    // https://frozen-island-74204.herokuapp.com/
    state={
       product:[],
       isLogin:true
    }
-
+   
    async componentDidMount(){
-      let data={
-         email:'dngrifai21@gmail.com',
-         password:'eeruei'
-      }
-      let url = 'http://localhost:9000/login'
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+      console.log(isMobile)
+		// var element = document.getElementById('text');
+		// if (isMobile) {
+  		// 	element.innerHTML = "You are using Mobile";
+		// } else {
+		// 	element.innerHTML = "You are using Desktop";
+		// }
+      
+      // let data={
+      //    email:'dngrifai21@gmail.com',
+      //    password:'eeruei'
+      // }
+      // let url = 'http://localhost:9000/login'
+      
+      
+      // console.log(navigator.userAgent)
       // try{
       //    let res =await fetch(url,{
       //       method:'POST',
@@ -56,22 +71,24 @@ export default class App extends Component {
       // }
 
       // let url = 'http://localhost:9000/login'
-      try{
 
-         let res =await axios({
-            method:'POST',
-            url:url,
-            data:data
-         })
-         console.log("oke")
-         console.log(res)
 
-      }catch(e){
-         console.log("error")
-         console.log(e.response.data)
-         console.log(e.response.status)
-         console.log(e.response.headers)
-      }
+      // try{
+
+      //    let res =await axios({
+      //       method:'POST',
+      //       url:url,
+      //       data:data
+      //    })
+      //    console.log("oke")
+      //    console.log(res)
+
+      // }catch(e){
+      //    console.log("error")
+      //    console.log(e.response.data)
+      //    console.log(e.response.status)
+      //    console.log(e.response.headers)
+      // }
    }
 
    render(){
@@ -79,7 +96,7 @@ export default class App extends Component {
          <Fragment>
             <Header isLogin={this.state.isLogin}/>
             <Menu/>
-            <a href="/detail">pindah halaman</a>
+            {/* <a href="/detail">pindah halaman</a> */}
          </Fragment>
       )
    }
