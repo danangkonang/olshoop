@@ -1,0 +1,31 @@
+.wrap{
+   background: #dddddd;
+   width: 100%;
+   padding: 5px;
+   border-radius: 3px;
+   display: flex;
+   justify-content: space-between;
+   box-sizing: border-box;
+}
+
+.wrap .input-search{
+   width: 90%;
+   padding: 10px;
+   border: none;
+   border-radius: 3px;
+   font-weight: 400;
+   margin-right: 5px;
+   font-size: 15px;
+   color: gray;
+}
+
+.wrap .search-btn{
+   width: 10%;
+   background: #aaaaaa;
+   border-radius: 3px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+}

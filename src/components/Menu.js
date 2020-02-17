@@ -1,8 +1,8 @@
 import React, {  } from 'react'
 import '../styles/dekstop.scss'
 // import '../styles/menu.scss'
-let width = window.innerWidth
-let categori=["pink","tomato","red","green","green","blue","yellow","pink","tomato","red","green","blue","yellow"]
+// let width = window.innerWidth
+// let categori=["pink","tomato","red","green","green","blue","yellow","pink","tomato","red","green","blue","yellow"]
 let menu=[
    "https://cf.shopee.co.id/file/c099daa851a7c80a14eea3b66968a3f5_tn",
    "https://cf.shopee.co.id/file/0bfdaa2d899e4d16ac0e31fc17a4d6ef_tn",
