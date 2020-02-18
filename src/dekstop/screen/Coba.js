@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Carousel from '../screen/tes/Corousel'
+import Carousel from './tes/Corousel'
 // import Buttons from '../screen/tes/Buttons'
-import Dots from '../screen/tes/Dot'
+import Dots from './tes/Dot'
 export default class App extends Component {
 
    constructor () {

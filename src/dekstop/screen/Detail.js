@@ -6,7 +6,7 @@ import{
    FaFacebookF, 
    FaInstagram
 } from 'react-icons/fa'
-import Coba from '../screen/Coba'
+import Coba from './Coba'
 export default class App extends React.Component {
    state={
       image:[1,2,3,4,5],
