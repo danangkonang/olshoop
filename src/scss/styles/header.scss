@@ -1,10 +1,8 @@
 .header-ecomers{
-   // min-width: 568px;
-   background: tomato;
-   // display: flex;
    position: fixed;
    width: 100%;
    top: 0;
+   background: linear-gradient( #03a5f0, #34b7f1)
 }
 
 .colom{
@@ -14,7 +12,6 @@
 .sub-colom{
    display: flex;
    flex:1;
-   background: tomato;
    padding: 10px;
 }
 
@@ -30,7 +27,8 @@
 .sub-colom a{
    text-decoration: none;
    margin-right: 10px;
-   color: #dddddd;
+   color: #ffffff;
+   font-weight: 400;
 }
 
 
@@ -53,7 +51,7 @@
    align-items: center;
 }
 .sub-colom-3 span{
-   color: #dddddd;
+   color: #3f4d51;
 }
 
 .link-accunt{
@@ -63,7 +61,7 @@
 .link-accunt a{
    text-decoration: none;
    font-weight: 600;
-   color: #dddddd;
+   color:#fff;
 }
 
 .search-box{

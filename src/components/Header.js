@@ -17,7 +17,7 @@ const App = ()=> {
                <a href="/">daftar</a>
             </div>
          </div>
-         <div className="colom" style={{background:'red'}}>
+         <div className="colom">
            <div className="sub-colom-1">
                <a href="/">akun</a>
                <a href="/">iklan</a>

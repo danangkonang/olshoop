@@ -1,40 +1,43 @@
 .wrapper-footer{
-   // background: #aaaaaa;
-   height: 200px;
+   background: #aaaaaa;
+   margin-top: 20px;
+   // height: 200px;
 }
 .sub-wrapper-footer{
    height: 100%;
    // display: inline-block;
    display: flex;
-   background: lightsalmon;
+   // background: lightsalmon;
    // height: 100px;
 }
 
 .sub-bottom{
-   background: tomato;
-   height: 100px;
+   // background: tomato;
+   height: 30px;
+   text-align: center;
+   padding: 10px 0;
 }
 
 .footer-left{
    display: flex;
    flex: 1;
-   background: greenyellow;
+   // background: greenyellow;
 }
 
 .footer-right{
    display: flex;
    flex: 1;
-   background: rgb(151, 71, 255);
+   // background: rgb(151, 71, 255);
 }
 
 .sub-footer{
    flex: 1;
-   background: #e75014;
+   // background: #e75014;
    margin: 5px;
 }
 
 .sub-footer-right{
    flex: 2;
-   background: #3d0505;
+   // background: #3d0505;
    margin: 5px;
 }

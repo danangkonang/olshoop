@@ -12,7 +12,7 @@ let menu=[
 ]
 const App =()=>  {
    return(
-      <div className="wrapper-menu" style={{marginTop:100,background:'pink'}}>
+      <div className="wrapper-menu">
          <div className="items" >
             
             <div className="item">
