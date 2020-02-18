@@ -1,8 +1,4 @@
 import React, {  } from 'react'
-import '../styles/dekstop.scss'
-// import '../styles/menu.scss'
-// let width = window.innerWidth
-// let categori=["pink","tomato","red","green","green","blue","yellow","pink","tomato","red","green","blue","yellow"]
 let menu=[
    "https://cf.shopee.co.id/file/c099daa851a7c80a14eea3b66968a3f5_tn",
    "https://cf.shopee.co.id/file/0bfdaa2d899e4d16ac0e31fc17a4d6ef_tn",
@@ -15,419 +11,241 @@ let menu=[
    "https://cf.shopee.co.id/file/6afd8f9ce7b884ef3c8172445dae9de4_tn",
 ]
 const App =()=>  {
-      return(
-         <div className="container" style={{marginTop:50}}>
-            <div className="items" >
-               
-               <div className="item">
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[0]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[1]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
+   return(
+      <div className="wrapper-menu" style={{marginTop:100,background:'pink'}}>
+         <div className="items" >
+            
+            <div className="item">
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[0]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
                </div>
-
-               <div className="item">
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[2]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[3]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[1]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
                </div>
-
-               <div className="item">
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[4]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[5]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div className="item">
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[6]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[7]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div className="item">
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[8]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[0]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div className="item">
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[1]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[2]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div className="item">
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[0]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[1]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div className="item">
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[2]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[3]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div className="item">
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[4]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[5]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div className="item">
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[6]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[7]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div className="item">
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[8]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[0]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div className="item">
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[1]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-                  <div className="sub-item" >
-                     <a href="/" className="sub-item-categori">
-                        <div className="menu-image" style={{backgroundImage:`url(${menu[2]})`}}/>
-                        <div className="menu-title">
-                           Handphone
-                        </div>
-                     </a>
-                  </div>
-               </div>
-                  
             </div>
-         </div>
-         // <div className="container" style={{paddingLeft:'15px',paddingRight:'15px',background:'#ddd',margin: 'auto'}}>
-            // <div className="items">
+
+            <div className="item">
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[2]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[3]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <div className="item">
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[4]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[5]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <div className="item">
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[6]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[7]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <div className="item">
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[8]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[0]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <div className="item">
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[1]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[2]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <div className="item">
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[0]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[1]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <div className="item">
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[2]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[3]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <div className="item">
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[4]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[5]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <div className="item">
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[6]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[7]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <div className="item">
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[8]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[0]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <div className="item">
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[1]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+               <div className="sub-item" >
+                  <a href="/" className="sub-item-categori">
+                     <div className="menu-image" style={{backgroundImage:`url(${menu[2]})`}}/>
+                     <div className="menu-title">
+                        Handphone
+                     </div>
+                  </a>
+               </div>
+            </div>
                
-            //    <div className="item">
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[0]})`}}></div>
-            //             <div className="menu-title">
-            //                Handphone
-            //             </div>
-            //          </a>
-            //       </div>
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[1]})`}}></div>
-            //             <div className="menu-title">
-            //                Mobil & motor
-            //             </div>
-            //          </a>
-            //       </div>
-            //    </div>
-
-            //    <div className="item">
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[2]})`}}></div>
-            //             <div className="menu-title">
-            //                Pakaian pria
-            //             </div>
-            //          </a>
-            //       </div>
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[3]})`}}></div>
-            //             <div className="menu-title">
-            //                Pakaian wanita
-            //             </div>
-            //          </a>
-            //       </div>
-            //    </div>
-
-            //    <div className="item">
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[4]})`}}></div>
-            //             <div className="menu-title">
-            //                Pakaian anak
-            //             </div>
-            //          </a>
-            //       </div>
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[5]})`}}></div>
-            //             <div className="menu-title">
-            //                Properti
-            //             </div>
-            //          </a>
-            //       </div>
-            //    </div>
-
-            //    <div className="item">
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[6]})`}}></div>
-            //             <div className="menu-title">
-            //                Rumah tangga
-            //             </div>
-            //          </a>
-            //       </div>
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[7]})`}}></div>
-            //             <div className="menu-title">
-            //                Hewan peliharaan
-            //             </div>
-            //          </a>
-            //       </div>
-            //    </div>
-
-            //    <div className="item">
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[8]})`}}></div>
-            //             <div className="menu-title">
-            //                Pekerjaan
-            //             </div>
-            //          </a>
-            //       </div>
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[0]})`}}></div>
-            //             <div className="menu-title">
-            //                Jasa
-            //             </div>
-            //          </a>
-            //       </div>
-            //    </div>
-
-            //    <div className="item">
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[1]})`}}></div>
-            //             <div className="menu-title">
-            //                Perkakas
-            //             </div>
-            //          </a>
-            //       </div>
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[2]})`}}></div>
-            //             <div className="menu-title">
-            //                Produk lainya
-            //             </div>
-            //          </a>
-            //       </div>
-            //    </div>
-
-            //    <div className="item">
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[3]})`}}></div>
-            //             <div className="menu-title">
-            //                Rumah tangga
-            //             </div>
-            //          </a>
-            //       </div>
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[4]})`}}></div>
-            //             <div className="menu-title">
-            //                Hewan peliharaan
-            //             </div>
-            //          </a>
-            //       </div>
-            //    </div>
-
-            //    <div className="item">
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[5]})`}}></div>
-            //             <div className="menu-title">
-            //                Rumah tangga
-            //             </div>
-            //          </a>
-            //       </div>
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[6]})`}}></div>
-            //             <div className="menu-title">
-            //                Hewan peliharaan
-            //             </div>
-            //          </a>
-            //       </div>
-            //    </div>
-
-            //    <div className="item">
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[1]})`}}></div>
-            //             <div className="menu-title">
-            //                Rumah tangga
-            //             </div>
-            //          </a>
-            //       </div>
-            //       <div className="sub-item">
-            //          <a href="/" className="sub-item-categori text-decoration-none d-flex flex-column">
-            //             <div className="menu-image" style={{backgroundImage:`url(${menu[8]})`}}></div>
-            //             <div className="menu-title">
-            //                Hewan peliharaan
-            //             </div>
-            //          </a>
-            //       </div>
-            //    </div>
-                  
-            // </div>
-
-         // </div>
-      )
-   
+         </div>
+      </div>
+   )
 }
 
 export default App

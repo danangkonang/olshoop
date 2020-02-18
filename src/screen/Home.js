@@ -1,14 +1,14 @@
 import React, { Component,Fragment } from 'react'
-
 import Header from '../components/Header'
-// import Menu from '../components/Menu'
+import Menu from '../components/Menu'
 
 // import Input from '../components/InputText'
 // import Button from '../components/Button'
-// import Card from '../components/card'
+import Card from '../components/card'
 // import Search from '../components/InputSearch'
 // import axios from 'axios'
 // var MobileDetect = require('mobile-detect')
+import Footer from '../components/Footer'
 export default class App extends Component {
    // https://frozen-island-74204.herokuapp.com/
    state={
@@ -98,16 +98,17 @@ export default class App extends Component {
       return(
          <Fragment>
             <Header isLogin={this.state.isLogin}/>
-            {/* <Menu/> */}
+            <Menu/>
             {/* <a href="/detail">pindah halaman</a> */}
 
             {/* <Input/>
 
-            <Button/>
+            <Button/> */}
 
-            <Card/> */}
+            <Card/>
 
             {/* <Search/> */}
+            <Footer/>
          </Fragment>
       )
    }

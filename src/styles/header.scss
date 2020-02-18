@@ -1,20 +1,33 @@
-.header{
-   min-width: 568px;
+.header-ecomers{
+   // min-width: 568px;
+   background: tomato;
+   // display: flex;
+   position: fixed;
+   width: 100%;
+   top: 0;
 }
 
-.colom1{
+.colom{
    display: flex;
 }
 
-.flex-1{
+.sub-colom{
    display: flex;
    flex:1;
-   // flex-direction: row;
-   justify-content: flex-end;
+   background: tomato;
    padding: 10px;
 }
 
-.flex-1 a{
+.sub-colom-left{
+   justify-content: flex-start;
+}
+
+.sub-colom-right{
+   justify-content: flex-end;
+   padding-right: 30px;
+}
+
+.sub-colom a{
    text-decoration: none;
    margin-right: 10px;
    color: #dddddd;
@@ -24,51 +37,57 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.colom2{
-   display: flex;
-}
-
-.sub-col1{
+.sub-colom-1{
    flex: 1;
-   // background: #ffffff;
 }
 
-.sub-col2{
-   flex: 4;
-   // background: lime;
-   padding: 10px;
-   // position: relative;
-   // box-sizing: border-box;
+.sub-colom-2{
+   flex: 2;
+   padding: 5px;
 }
 
-.sub-col3{
+.sub-colom-3{
    display: flex;
    flex: 1;
    flex-direction: row;
-   align-items: center
-   // background: pink;
+   align-items: center;
 }
-.sub-col3 span{
+.sub-colom-3 span{
    color: #dddddd;
 }
+
 .link-accunt{
    margin-right: 10px;
    margin-left: 20px;
 }
 .link-accunt a{
    text-decoration: none;
-   font-weight: 400;
+   font-weight: 600;
    color: #dddddd;
+}
+
+.search-box{
+   width: 100%;
+   position: relative;
+}
+
+.input-search-box{
+   width: 100%;
+   padding: 8px 60px 8px 15px;
+   box-sizing: border-box;
+   border: 2px solid #dddddd;
+   color: #aaaaaa;
+   font-size: 18px;
+   outline: none;
+   border-radius: 5px;
+   min-width: 400px;
+}
+
+.icon-seacrch{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 5px;
+   font-weight: 600;
+   cursor: pointer;
 }

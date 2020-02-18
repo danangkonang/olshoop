@@ -1,0 +1,40 @@
+.wrapper-footer{
+   // background: #aaaaaa;
+   height: 200px;
+}
+.sub-wrapper-footer{
+   height: 100%;
+   // display: inline-block;
+   display: flex;
+   background: lightsalmon;
+   // height: 100px;
+}
+
+.sub-bottom{
+   background: tomato;
+   height: 100px;
+}
+
+.footer-left{
+   display: flex;
+   flex: 1;
+   background: greenyellow;
+}
+
+.footer-right{
+   display: flex;
+   flex: 1;
+   background: rgb(151, 71, 255);
+}
+
+.sub-footer{
+   flex: 1;
+   background: #e75014;
+   margin: 5px;
+}
+
+.sub-footer-right{
+   flex: 2;
+   background: #3d0505;
+   margin: 5px;
+}

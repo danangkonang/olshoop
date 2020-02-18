@@ -1,24 +1,28 @@
-.wraper{
+.wraper-products{
    margin-right: auto;
    margin-left:  auto;
    max-width: 1200px;
-   background: tomato;
-   margin: 50px;
-   padding: 50px;
+   background: #ffffff;
+   margin-top: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 5px;
+   padding-left: 5px;
 }
-.card{
-   background: rgb(228, 27, 27);
-   border: 2px solid #aaaaaa;
-   // height: 100px;
-   // width: call(100%/8);
-   border-radius: 5px;
-   // line-height: 0;
+.box-card{
+   $width: 100%;
+   width: calc(#{$width / 6});
+   padding: 0 5px 5px 0;
+   box-sizing: border-box;
 }
-.card-body{
 
+.card-product{
+   background: lightslategray;
+   border:1px solid rgba(0, 0, 0, .6);
+   border-radius: 3px;
 }
-.card-img{
-   height: 100%;
+
+.card-product img{
    width: 100%;
-   // line-height: 0;
+   height: 100%;
 }
