@@ -26,9 +26,37 @@ const App = ()=>{
       }
    }
    return(
-      <div className="container-fluid pt-5">
-            <div className="row justify-content-center">
+      <div className="wrapper-login">
+         <div className="card-login">
+            <div className="sub-card">
+               a
+            </div>
+            <div className="sub-card">
+               <div className="card-login-form">
+                  <div className="title-login">login</div>
+
+                  <div>
+                     <div className="form-input">
+                        <label>Email
+                           <input type="text" className="input-text"/>
+                        </label>
+                     </div>
+                     <div className="form-input">
+                        <label>Password
+                           <input type="text" className="input-text"/>
+                        </label>
+                     </div>
+
+                  </div>
+                     <button className="btn-login-form">login</button>
+
+               </div>
+            </div>
+         </div>
+            {/* <div className="row justify-content-center">
+
                <div className="col-md-4 col-sm-6 col-lg-4 col-xl-4">
+
                   <div className="d-flex justify-content-center h2 font-weight-bold">
                      Login
                   </div>
@@ -60,7 +88,7 @@ const App = ()=>{
                   <div className="mt-3">Belum mempunyai akun? <a href="/registrasi" className="font-weight-bold text-decoration-none">Daftar</a></div>
 
                </div>
-            </div>
+            </div> */}
          </div>
    )
 }

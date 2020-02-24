@@ -1,11 +1,10 @@
 import React, {  } from 'react'
-import '../styles/input.scss'
+// import '../styles/input.scss'
 const App = ()=> {
    return(
-      <div style={{margin:50}}>
-         <label>input
-            <input type="text" className="input-text"/>
-         </label>
+      <div>
+         <div className="title-input-text">input</div>
+         <input type="text" className="form-input-text"/>
       </div>
    )
 }

@@ -13,8 +13,8 @@ const App = ()=> {
             <div className="sub-colom sub-colom-right">
                <a href="/">notifikasi</a>
                <a href="/">bantuan</a>
-               <a href="/">login</a>
-               <a href="/">daftar</a>
+               <a href="/login">login</a>
+               <a href="/registrasi">daftar</a>
             </div>
          </div>
          <div className="colom">
@@ -28,17 +28,19 @@ const App = ()=> {
            </div>
            <div className="sub-colom-2">
                <div className="search-box">
+                  <AiOutlineSearch size={25} className="icon-seacrch"/>
                   <input type="text" className="input-search-box" placeholder="search" />
-                     <AiOutlineSearch color="red" size={25} className="icon-seacrch"/>
                </div>
            </div>
            <div className="sub-colom-3">
-               <div className="link-accunt">
-                  <a href="/">akun</a>
-               </div>
-               <span>|</span>
-               <div className="link-accunt">
-                  <a href="/">iklan</a>
+               <div className="accunt">
+                  <div className="link-accunt">
+                     <a href="/">akun</a>
+                  </div>
+                  {/* <span>|</span> */}
+                  <div className="link-accunt">
+                     <a href="/iklan">iklan</a>
+                  </div>
                </div>
            </div>
          </div>

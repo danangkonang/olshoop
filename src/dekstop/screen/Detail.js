@@ -6,20 +6,20 @@ const Detail = ()=> {
          <div className="col-product">
             <div className="box-image">
                <div className="primary-image">
-                  a
+                  <img src="https://www.otomotifer.com/wp-content/uploads/2019/04/Mobil-City-Car-Murah-Honda.jpg" alt="mobile" style={{height:'100%',width:'100%'}}/>
                </div>
                <div className="sub-image">
                   <div className="image-menu">
-                     a
+                     <img src="https://www.otomotifer.com/wp-content/uploads/2019/04/Mobil-City-Car-Murah-Honda.jpg" alt="mobile" style={{height:'100%',width:'100%'}}/>
                   </div>
                   <div className="image-menu" style={{background:'pink'}}>
-                     s
+                     <img src="https://www.otomotifer.com/wp-content/uploads/2019/04/Mobil-City-Car-Murah-Honda.jpg" alt="mobile" style={{height:'100%',width:'100%'}}/>
                   </div>
                   <div className="image-menu">
-                     d
+                     <img src="https://www.otomotifer.com/wp-content/uploads/2019/04/Mobil-City-Car-Murah-Honda.jpg" alt="mobile" style={{height:'100%',width:'100%'}}/>
                   </div>
                   <div className="image-menu" style={{background:'pink'}}>
-                     d
+                     <img src="https://www.otomotifer.com/wp-content/uploads/2019/04/Mobil-City-Car-Murah-Honda.jpg" alt="mobile" style={{height:'100%',width:'100%'}}/>
                   </div>
                </div>
             </div>
@@ -27,8 +27,8 @@ const Detail = ()=> {
                
                <div className="body-list-product">
                   <div className="product-name-header">
-                     <h1>Ea voluptate laborum fugiat laborum enim amet id laborum id nostrud culpa nulla exercitation in.</h1>
-                     <h1>Rp. 200.000</h1>
+                     <p className="name-product">Ea voluptate laborum fugiat laborum enim amet id laborum id nostrud culpa nulla exercitation in.</p>
+                     <p className="prince-product">Rp. 200.000</p>
                   </div>
 
 

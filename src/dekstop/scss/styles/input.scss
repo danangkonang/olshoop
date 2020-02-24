@@ -1,22 +1,27 @@
-.input-text{
+.form-input-text{
    width: 100%;
-   border: 2px solid #aaa;
+   border: 1px solid rgba(0, 0, 0, .3);
    border-radius: 4px;
-   margin: 8px 0;
+   height: 39px;
+   // margin: 8px 0;
    outline: none;
-   padding: 8px;
+   padding-left: 15px;
    box-sizing: border-box;
    transition: .3s;
    color:dimgray;
    font-size: 15px;
+   outline: none;
 }
 
-.input-text:focus{
+.form-input-text:focus{
    border-color: dodgerblue;
-   box-shadow: 0 0 8px 0 dodgerblue;
+   box-shadow: 0 0 2px 0 dodgerblue;
 }
 
-label{
+.title-input-text{
+   color: rgba(0, 0, 0, .5);
    font-weight: 400;
-   font-size: 15px;
+   margin-top: 10px;
+   margin-bottom: 5px;
+   // padding: 5px 0;
 }

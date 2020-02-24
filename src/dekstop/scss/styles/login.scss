@@ -1,0 +1,85 @@
+.wrapper-login{
+   background: #ffffff;
+   margin-right: auto;
+   margin-left:  auto;
+   width: 1200px;
+}
+
+.card-login{
+   display: flex;
+   min-height: 100vh;
+}
+
+.sub-card{
+   display: flex;
+   flex: 1;
+   background: rgb(192, 255, 192);
+   margin: 10px;
+   align-items: center;
+   justify-content: center;
+}
+
+.card-login-form{
+   border: 2px solid rgba(0, 0, 0, .3);
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 5px;
+}
+
+.title-login{
+   font-size: 18px;
+}
+
+.input-text{
+   width: 100%;
+   border: 2px solid #aaa;
+   border-radius: 4px;
+   margin: 8px 0;
+   outline: none;
+   padding: 8px;
+   box-sizing: border-box;
+   transition: .3s;
+   color:dimgray;
+   font-size: 15px;
+}
+
+.input-text:focus{
+   border-color: dodgerblue;
+   box-shadow: 0 0 3px 0 dodgerblue;
+}
+
+label{
+   font-weight: 400;
+   font-size: 14px;
+}
+
+.btn-login-form{
+   // width: 100%;
+   // padding: 10px;
+   // border-radius: 10px;
+   // outline: none;
+   // border: 1px solid transparent;
+   background: purple;
+
+      display: inline-block;
+      font-weight: 400;
+      color: #212529;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      // background-color: red;
+      border: 1px solid transparent;
+      padding: 0.375rem 3rem;
+      // font-size: 1rem;
+      line-height: 1.5;
+      // border-radius: 0.25rem;
+
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
