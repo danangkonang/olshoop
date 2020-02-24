@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React, {  } from 'react'
 
 const App =(props)=>{
-   let [email,setEmail]=useState('')
-   let [password,setPassword]=useState('')
-   let [username,setUsername]=useState('')
+   // let [email,setEmail]=useState('')
+   // let [password,setPassword]=useState('')
+   // let [username,setUsername]=useState('')
 
-   const registrasi =async ()=>{
-      console.log('registrasi')
-   }
+   // const registrasi =async ()=>{
+   //    console.log('registrasi')
+   // }
 
    return(
       <div className="wrapper-registrasi">

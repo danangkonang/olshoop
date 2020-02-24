@@ -1,8 +1,9 @@
-import React, { useState,useEffect, Fragment } from 'react'
-import {AiOutlineSearch} from 'react-icons/ai'
+import React, { useState, Fragment } from 'react'
+// import {AiOutlineSearch} from 'react-icons/ai'
 import {MdKeyboardArrowDown,MdKeyboardArrowUp} from 'react-icons/md'
 const App = ()=> {
-   const [pilih,setPilih]=useState([
+
+   const [pilih]=useState([
       "merah",
       "kuning",
       "hijau",
@@ -11,6 +12,7 @@ const App = ()=> {
       "putih",
       "coklat"
    ])
+
    const [select,setSelect]=useState(false)
    const [selected,setSelected]=useState("select")
    const showSelect=()=>{

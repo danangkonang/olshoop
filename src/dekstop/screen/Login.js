@@ -1,30 +1,30 @@
-import React,{useState} from 'react'
-import axios from 'axios'
+import React,{} from 'react'
+// import axios from 'axios'
 const App = ()=>{
-   let [email,setEmail]=useState('')
-   let [password,setPassword]=useState('')
+   // let [email,setEmail]=useState('')
+   // let [password,setPassword]=useState('')
 
-   const login= async ()=>{
-      let data={
-         email,
-         password
-      }
-      let url = 'http://localhost:9000/login'
-      try{
-         let res = await axios({
-            method:'POST',
-            url:url,
-            data:data
-         })
-         console.log("oke")
-         console.log(res)
-      }catch(e){
-         console.log("error")
-         console.log(e.response.data)
-         console.log(e.response.status)
-         console.log(e.response.headers)
-      }
-   }
+   // const login= async ()=>{
+   //    let data={
+   //       email,
+   //       password
+   //    }
+   //    let url = 'http://localhost:9000/login'
+   //    try{
+   //       let res = await axios({
+   //          method:'POST',
+   //          url:url,
+   //          data:data
+   //       })
+   //       console.log("oke")
+   //       console.log(res)
+   //    }catch(e){
+   //       console.log("error")
+   //       console.log(e.response.data)
+   //       console.log(e.response.status)
+   //       console.log(e.response.headers)
+   //    }
+   // }
    return(
       <div className="wrapper-login">
          <div className="card-login">

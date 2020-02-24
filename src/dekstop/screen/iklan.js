@@ -1,7 +1,11 @@
-import React, { useState,useEffect } from 'react'
+import React from 'react'
 import Select from '../components/Select'
 import Input from '../components/InputText'
 import Btn from '../components/Button'
+
+// import ImagesUploader from 'react-images-uploader';
+// import 'react-images-uploader/styles.css';
+// import 'react-images-uploader/font.css';
 const App = ()=> {
    
    return(
@@ -9,10 +13,20 @@ const App = ()=> {
          <div className="card-iklan">
             <div className="sub-card-iklan">
 
-               <label className="custom-file-input">
-                  {/* <img src="dfs" alt="image"/> */}
+               <div className="custom-file-input">
                   <input type="file" className=""/>
-               </label>
+               </div>
+
+               {/* <ImagesUploader
+                  url="http://localhost:9090/multiple"
+                  optimisticPreviews
+                  onLoadEnd={(err) => {
+                     if (err) {
+                        console.error(err);
+                     }
+                  }}
+                  label="Upload multiple images"
+				   /> */}
                
             </div>
 
