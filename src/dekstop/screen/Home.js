@@ -4,7 +4,7 @@ import Menu from '../components/Menu'
 
 // import Input from '../components/InputText'
 // import Button from '../components/Button'
-import Card from '../components/card'
+import Card from '../components/Card'
 // import Search from '../components/InputSearch'
 // import axios from 'axios'
 // var MobileDetect = require('mobile-detect')

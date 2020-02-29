@@ -9,7 +9,7 @@ import {
  import Coba from '../dekstop/screen/Coba'
  import Login from '../dekstop/screen/Login'
  import Registrasi from '../dekstop/screen/Registrasi'
- import Iklan from '../dekstop/screen/iklan'
+ import Iklan from '../dekstop/screen/Iklan'
  import '../dekstop/scss/dekstop.scss'
  export default class App extends React.Component {
    render() {
