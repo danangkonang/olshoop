@@ -1,5 +1,11 @@
 import React, {  } from 'react'
-
+import{
+   FaFacebookF,
+   FaInstagram,
+   FaTwitter,
+   FaWhatsapp
+} from 'react-icons/fa'
+import { from } from 'zen-observable'
 const Detail = ()=> {
    return(
       <div className="wrapper-detail">
@@ -79,13 +85,32 @@ const Detail = ()=> {
                   
                </div>
                <div className="footer-list-product">
-                  share ikon sosmed
+                  <div className="text-share">
+                     <span>Share</span>
+                  </div>
+                  <div className="box-icon-sosmed">
+                     <a href="/" className="share-icon-sosmed">
+                        <FaFacebookF/>
+                     </a>
+                     <a href="/" className="share-icon-sosmed">
+                        <FaInstagram/>
+                     </a>
+                     <a href="/" className="share-icon-sosmed">
+                        <FaTwitter/>
+                     </a>
+                     <a href="/" className="share-icon-sosmed">
+                        <FaWhatsapp/>
+                     </a>
+                  </div>
                </div>
 
             </div>
          </div>
 
          <div className="col-tex-description">
+            <p>
+               <span>Descripsi</span>
+            </p>
             <p>
                Incididunt culpa minim anim Lorem adipisicing et cillum qui. Sit quis velit in cupidatat ut. Amet duis sint exercitation exercitation pariatur ad duis ut. Cillum veniam consectetur minim Lorem officia laboris anim excepteur et nulla.
                Dolore tempor ut anim nulla aliquip id sint laborum reprehenderit esse laborum fugiat qui. Voluptate amet aliqua sunt laboris non enim occaecat eu excepteur ea adipisicing eiusmod ut eiusmod. Dolor ex elit do et occaecat non. Aliquip enim qui adipisicing ipsum adipisicing sit excepteur proident minim. Veniam elit proident culpa nisi tempor commodo fugiat sint eiusmod consectetur eiusmod deserunt qui esse. Amet sunt occaecat qui nulla elit eiusmod fugiat excepteur. Sit qui duis in exercitation consequat consectetur culpa do Lorem deserunt esse tempor ut. Non sunt minim dolore labore laborum fugiat proident magna eu cillum nostrud Lorem. Magna eiusmod cillum duis pariatur fugiat est deserunt proident ullamco. Est irure nisi excepteur in ad incididunt qui ad aliquip nisi ullamco est in. Incididunt laborum deserunt aliquip adipisicing nulla excepteur minim id consequat ipsum cupidatat consequat. Ullamco deserunt pariatur ad aliquip enim in elit. Excepteur enim ipsum irure id aliquip aute. Eiusmod non veniam quis ipsum consequat velit officia est id irure. Mollit enim consequat exercitation non eu culpa velit irure ex laboris et.

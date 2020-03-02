@@ -1,28 +1,24 @@
 .wrapper-detail{
    margin-right: auto;
    margin-left:  auto;
-   // background: #0e80e4;
+   background: #0e80e4;
    width: 1200px;
 }
 
 .col-product{
-   // background: lightsalmon;
    height: 500px;
    display: flex;
 }
 
 .col-tex-description{
-   background: lime;
-   // height: 100px
+   background: #0e80e4;
 }
 
 .box-image{
-   background: seagreen;
    width: 40%;
 }
 
 .primary-image{
-   background: #0e80e4;
    height: 80%;
    box-sizing: border-box;
 }
@@ -40,7 +36,6 @@
 }
 
 .box-list-detail{
-   // background: saddlebrown;
    width: 60%;
    padding-left: 10px;
    box-sizing: border-box;
@@ -48,11 +43,9 @@
 
 .body-list-product{
    height: 80%;
-   background: #ffffff;
 }
 
 .product-name-header{
-   background: pink;
    height: 40%;
    display: flex;
    flex-direction: column;
@@ -72,25 +65,17 @@
 }
 
 .product-detail-list{
-   // background: brown;
    height: 60%;
 }
 
 .cart-list{
    display: flex;
-   // flex: 1;
    height: 20%;
    align-items: center;
 }
 
 .key-list{
-   background: violet;
    width: 15%;
-}
-
-.footer-list-product{
-   background: #0e80e4;
-   height: 20%;
 }
 
 .show-image{
@@ -98,5 +83,32 @@
    height: 60%;
 }
 
+.footer-list-product{
+   height: 20%;
+   display: flex;
+}
+
+.text-share{
+   display: flex;
+   align-items: center;
+}
+
+.box-icon-sosmed{
+   display: flex;
+   flex: 1;
+   align-items: center
+}
+
+.share-icon-sosmed{
+   background: #ffffff;
+   margin-left: 25px;
+   width: 35px;
+   height: 35px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   text-decoration: none;
+}
 
 

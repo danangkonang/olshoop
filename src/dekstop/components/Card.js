@@ -10,7 +10,7 @@ const App = ()=> {
                      <a href="/detail">
                         <div className="card-product">
                            <div className="image-product">
-                              <image src="https://statik.tempo.co/data/2019/03/29/id_830337/830337_720.jpg" alt="image"/>
+                              <img src="https://statik.tempo.co/data/2019/03/29/id_830337/830337_720.jpg" alt="image"/>
                            </div>
                            <div className="product-news">
                               <div className="card-name">
