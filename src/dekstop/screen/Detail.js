@@ -5,7 +5,6 @@ import{
    FaTwitter,
    FaWhatsapp
 } from 'react-icons/fa'
-import { from } from 'zen-observable'
 const Detail = ()=> {
    return(
       <div className="wrapper-detail">

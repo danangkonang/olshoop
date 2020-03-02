@@ -1,11 +1,10 @@
-import React, {  } from 'react'
-// import '../styles/button.scss'
-const App = ()=> {
+import React from 'react'
+const App = (props)=> {
    return(
       <div>
-         {/* <button type="button" className="btn btn-primary btn-block">tombol</button> */}
-         {/* <button type="button" className="tombol-click">tombol</button> */}
-         <button type="button" className="tombol-outline">tombol</button>
+         <button type="button" className={`tombol-btn ${props.outline&&"tombol-outline"} ${props.block&&"tombol-block"}`} onClick={props.onClick}>
+            {props.title?props.title:"button"}
+         </button>
       </div>
    )
 }

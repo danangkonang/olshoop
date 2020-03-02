@@ -42,7 +42,27 @@
 .sub-colom-2{
    flex: 2;
    padding: 5px;
+   position: relative;
 }
+
+.box-auto-sugest-container{
+   position: absolute;
+   // background: lime;
+   width: 100%;
+   // min-height: 240px;
+   left: 0;
+   top:45px;
+   padding: 5px;
+   box-sizing: border-box;
+}
+
+.box-auto-sugest-content{
+   background: #aaaaaa;
+   min-height: 140px;
+   padding: 5px;
+}
+
+
 
 .sub-colom-3{
    display: flex;
@@ -92,3 +112,5 @@
    cursor: pointer;
    color: rgba(0, 0, 0, .5)
 }
+
+

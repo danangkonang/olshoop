@@ -1,6 +1,23 @@
-import React, {  } from 'react'
+import React, { useState } from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
 const App = ()=> {
+   const [search,setSearch]=useState(false)
+   const searchProduct =()=>{
+      setSearch(!search)
+   }
+
+   const boxSeacrh = ()=>{
+      if(search){
+         return(
+            <div className="box-auto-sugest-container" >
+               <div className="box-auto-sugest-content">
+               testing
+               </div>
+            </div>
+         )
+      }
+   }
+
    return(
       <div className="header-ecomers" >
          <div className="colom">
@@ -29,15 +46,20 @@ const App = ()=> {
            <div className="sub-colom-2">
                <div className="search-box">
                   <AiOutlineSearch size={25} className="icon-seacrch"/>
-                  <input type="text" className="input-search-box" placeholder="search" />
+                  <input 
+                  onFocus={searchProduct} 
+                  onBlur={searchProduct}
+                  type="text" className="input-search-box" placeholder="search" />
                </div>
+               {
+                  boxSeacrh()
+               }
            </div>
            <div className="sub-colom-3">
                <div className="accunt">
                   <div className="link-accunt">
-                     <a href="/">akun</a>
+                     <a href="/profil">akun</a>
                   </div>
-                  {/* <span>|</span> */}
                   <div className="link-accunt">
                      <a href="/iklan">iklan</a>
                   </div>
