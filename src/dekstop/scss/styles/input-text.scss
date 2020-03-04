@@ -7,26 +7,25 @@
    padding-left: 15px;
    box-sizing: border-box;
    transition: .3s;
-   color:dimgray;
+   color:rgba(0, 0, 0, .5);
    font-size: 15px;
    outline: none;
 }
 
 .form-error{
-   border-color: #dc3545;
+   border-color: $border-error;
 }
 
 .form-nornal{
-   border-color: rgba(0, 0, 0, .3);
+   border-color: $border;
 }
 
 .form-input-text:focus{
-   border-color: dodgerblue;
-   // box-shadow: 0 0 2px 0 dodgerblue;
+   border-color: $border-active;
 }
 
 .title-input-text{
-   color: rgba(0, 0, 0, .5);
+   color: $text;
    font-weight: 400;
    margin-top: 10px;
    margin-bottom: 5px;
@@ -34,5 +33,5 @@
 
 .message-error{
    font-size: 14px;
-   color: #dc3545;
+   color: $border-error;
 }

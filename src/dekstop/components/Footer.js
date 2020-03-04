@@ -1,8 +1,12 @@
 import React, { Fragment } from 'react'
+import {
+   AiOutlineCopyright
+} from 'react-icons/ai'
+import { from } from 'zen-observable'
 const App = ()=> {
    return(
       <Fragment>
-         <hr/>
+         <hr style={{borderWidth:0,height:1,background:'rgba(0,0,0,.3)'}}/>
       <div className="wrapper-footer">
          <div className="sub-wrapper-footer">
             <div className="footer-left">
@@ -59,7 +63,8 @@ const App = ()=> {
             </div>
          </div>
          <div className="sub-bottom">
-            <div>&copy; hakcipta di lindungi domoin.com</div>
+            <AiOutlineCopyright/>
+            <div>hakcipta di lindungi domoin.com</div>
          </div>
       </div>
       </Fragment>

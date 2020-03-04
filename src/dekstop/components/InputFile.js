@@ -89,13 +89,12 @@ const App = ()=> {
             />
 
             <div className="text-helper-input-file">
-               <span>Drag and Drop Images Here</span>
+               <span>Tarik dan letakkan di sini</span>
             </div>
          </div>
-         <div className="footer-multy-file">
-            <span
-            onClick={() => infil.current.click()}
-            >Brose file</span>
+         <div className="footer-multy-file"
+            onClick={() => infil.current.click()}>
+            <span>Cari gambar</span>
          </div>
       </div>
    )

@@ -1,0 +1,75 @@
+.box-card-placeholder{
+   $width: 100%;
+   width: $width / 6;
+   box-sizing: border-box;
+   padding: 3px;
+}
+
+@keyframes placeHolderRuning{
+   0%{
+       background-position: -468px 0
+   }
+   100%{
+       background-position: 468px 0
+   }
+}
+
+.card-placeholder{
+   height: 261.5px;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+   animation-name: placeHolderRuning;
+   animation-timing-function: linear;
+   background: #f6f7f8;
+   background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+   background-size: 800px 104px;
+   border: 1px solid;
+   border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+}
+
+.paceholder-image-product{
+   height:145.5px;
+}
+.paceholder-content-product{
+   height: 116px;
+}
+
+.paceholder-content-product .ganjil{
+   background: white;
+   height: 13.25px;
+   font-size: 10px;
+}
+
+.paceholder-content-product .genap{
+   height: 21px;
+   display: flex;
+}
+
+.genap .satu{
+   background: #ffffff;
+   width: 5px;
+}
+.genap .dua{
+   flex: 1;
+}
+.genap .tiga{
+   background: #ffffff;
+   width: 5px;
+}
+
+.genap .lima{
+   flex: 2;
+}
+.genap .enam{
+   background: #ffffff;
+   flex: 1;
+}
+
+.genap .delapan{
+   flex: 4;
+}
+.genap .sembilan{
+   background: #ffffff;
+   flex: 4;
+}

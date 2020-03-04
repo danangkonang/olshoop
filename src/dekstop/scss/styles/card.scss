@@ -20,17 +20,24 @@
    text-decoration: none;
 }
 
-// .box-card:hover{
-//    transition: transform .4s ease-out;
-//    transform: translateY(-2px);
-// }
-
 .card-product{
-   background: lightgrey;
+   background: #ffffff;
+   border: 1px solid;
+   border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+   height: 305px;
+   border-radius: 2px;
+}
+
+.card-product:hover{
+   border: 1px solid $primary;
+   transition: transform .1s ease-out;
+   transform: translateY(-3px);
 }
 
 .image-product{
    line-height: 0;
+   height: 192px;
+   background: lightslategray;
 }
 
 .card-product img{
@@ -39,7 +46,6 @@
 }
 
 .product-news{
-   background: #ffffff;
    padding: 7px 5px;
 }
 
@@ -51,6 +57,7 @@
 }
 
 .card-name .name-product-title{
+   color: rgba(0, 0, 0, .7);
    word-wrap: break-word;
    overflow: hidden;
    display: -webkit-box;
@@ -58,7 +65,8 @@
    -webkit-box-orient: vertical;
    -webkit-line-clamp: 2;
    height: inherit;
-   color: #565858;
+   font-size: .875rem;
+   font-weight: 500;
 }
 
 .card-princ{
@@ -66,14 +74,14 @@
    width: 100%;
    white-space: nowrap;
    text-overflow: ellipsis;
-   line-height: 22px;
+   line-height: 23px;
    overflow: hidden;
 }
 
 .card-princ .prince-name{
-   color: #565858;
-   font-weight: bold;
-   font-size: 14px;
+   color: $primary;
+   font-weight: 600;
+   font-size: 15px;
 }
 
 .card-seller{
@@ -85,9 +93,9 @@
    overflow: hidden;
 }
 .card-seller .seller-title{
-   color: #565858;
-   font-weight: bold;
-   font-size: 14px;
+   font-size: .875rem;
+   font-weight: 500;
+   color: rgba(0, 0, 0, .7);
 }
 .card-location{
    display: block;
@@ -99,8 +107,8 @@
 }
 
 .card-location .location-name{
-   color: #565858;
-   font-weight: bold;
-   font-size: 14px;
+   font-size: .875rem;
+   font-weight: 500;
+   color: rgba(0, 0, 0, .7);
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 const App = (props)=> {
    return(
       <div>
-         <div className="title-input-text">{props.title?props.title:"Text input"}</div>
+         <div className="title-input-text">{props.title?props.title:"input"}</div>
          <input 
          onChange={props.onChange}
          value={props.value}
