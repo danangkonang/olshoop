@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import {
    AiOutlineCopyright
 } from 'react-icons/ai'
-import { from } from 'zen-observable'
 const App = ()=> {
    return(
       <Fragment>

@@ -39,7 +39,7 @@
 
 .select-box-items{
    margin-top: 10px;
-   height: 150px;
+   max-height: 150px;
    display: flex;
    flex-direction: column;
    overflow-x: auto;

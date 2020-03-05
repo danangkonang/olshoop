@@ -61,7 +61,7 @@ const App = ()=> {
                      <a href="/profil">akun</a>
                   </div>
                   <div className="link-accunt">
-                     <a href="/iklan">iklan</a>
+                     <a href="/post-product">iklan</a>
                   </div>
                </div>
            </div>
