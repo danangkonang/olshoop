@@ -1,8 +1,9 @@
 import React, { useState,useEffect } from 'react'
-const App = ()=> {
+const App = (props)=> {
    return(
       <div>
-         <textarea></textarea>
+         <div className="title-area-text">{props.title?props.title:"input"}</div>
+         <textarea className="area-text" rows={props.rows}></textarea>
       </div>
    )
 }

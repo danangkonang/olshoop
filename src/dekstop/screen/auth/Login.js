@@ -1,19 +1,58 @@
 import React,{useState} from 'react'
-// import axios from 'axios'
+import axios from 'axios'
 import InputText from '../../components/InputText'
 import Btn from '../../components/Button'
-const App = ()=>{
+const App = (props)=>{
    const[email,setEmail]=useState('')
    const[password,setPassword]=useState('')
-   const[error]=useState(false)
-   const[message]=useState('')
+   const[errorEmail,setErrorEmail]=useState(false)
+   const[errorPassword,setErrorPassword]=useState(false)
+   const[messageEmail,setMessageEmail]=useState('')
+   const[messagePassword,setMessagePassword]=useState('')
 
-   const login = ()=>{
-      const data ={
-         email,password
+   const login =async ()=>{
+      try{
+         let res = await axios({
+            method: 'post',
+            url: 'http://localhost:9000/login',
+            data: {
+               email,password
+            }
+         })
+         localStorage.setItem('token',res.data.Data.token)
+         console.log(res)
+         // props.history.push('/')
+      }catch(e){
+         console.log("iki error",e.response)
       }
-      console.log(data)
+      
    }
+
+   const _handelEnter =(e)=>{
+      if(e.keyCode===13){
+         _validasi()
+      }
+   }
+
+   const _validasi = ()=>{
+      if(email===''&&password===''){
+         setErrorEmail(true)
+         setMessageEmail('required')
+         setErrorPassword(true)
+         setMessagePassword('required')
+      }else if(email===''){
+         setErrorEmail(true)
+         setMessageEmail('required')
+      }else if(password===''){
+         setErrorPassword(true)
+         setMessagePassword('required')
+      }else{
+         login()
+      }
+   }
+
+
+
    return(
       <div className="wrapper-login">
          <div className="card-login">
@@ -29,9 +68,13 @@ const App = ()=>{
                         <InputText
                            title="Email"
                            value={email}
-                           error={error}
-                           message={message}
-                           onChange={(v)=>setEmail(v.target.value)}
+                           error={errorEmail}
+                           message={messageEmail}
+                           onChange={(v)=>{
+                              setEmail(v.target.value)
+                              setErrorEmail(false)
+                           }}
+                           onKeyDown={(e,refName)=>_handelEnter(e,refName)}
                         />
                      </div>
                      <div className="form-input">
@@ -39,14 +82,18 @@ const App = ()=>{
                            title="Password"
                            password={true}
                            value={password}
-                           error={error}
-                           message={message}
-                           onChange={(v)=>setPassword(v.target.value)}
+                           error={errorPassword}
+                           message={messagePassword}
+                           onChange={(v)=>{
+                              setPassword(v.target.value)
+                              setErrorPassword(false)
+                           }}
+                           onKeyDown={(e)=>_handelEnter(e)}
                         />
                      </div>
                      <Btn
                         block={true}
-                        outline={true}
+                        outline={false}
                         title="Masuk"
                         onClick={login}
                      />

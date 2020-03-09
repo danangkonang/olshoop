@@ -1,16 +1,12 @@
-import React, {useState,useRef} from 'react'
+import React, {useState} from 'react'
 import InputFile from '../../components/InputFile'
 import InputSelect from '../../components/InputSelect'
 import InputText from '../../components/InputText'
+import TextArea from '../../components/TextArea'
 import Button from '../../components/Button'
 const App = ()=> {
    const [preview,setPreview]=useState([])
 
-
-
-   // const infil = useRef("file")
-   const [images]=useState([])
-   // const [preview,setPreview]=useState([])
    const [category]=useState(["smartphone","pakaian","properti"])
    const [show,setShow]=useState(false)
    const [selected,setSelected]=useState("")
@@ -35,46 +31,13 @@ const App = ()=> {
 
    const saveProduct =()=>{
       let data = {
-         images,
+         preview,
          selected,
          selected2,
          prodValue
       }
       console.log(data)
    }
-
-   
-
-   // const handleAction =(e)=>{
-   //    e.preventDefault()
-   //    e.stopPropagation()
-   // }
-
-   // const handleDrop = e => {
-   //    e.preventDefault()
-   //    e.stopPropagation()
-   //    let file = e.dataTransfer.files
-   //    for(var i =0; i < file.length; i++){
-   //       let newFile = file[i]
-   //       var reader = new FileReader()
-   //       reader.readAsDataURL(newFile)
-   //       reader.onloadend =  (event)=> {
-   //          setPreview(preview=>[...preview,{base64:event.target.result}])
-   //       }
-   //    }
-   // }
-
-   // const onChange = ()=>{
-   //    let file = infil.current.files
-   //    for(var i =0; i < file.length; i++){
-   //       let newFile = file[i]
-   //       var reader = new FileReader()
-   //       reader.readAsDataURL(newFile)
-   //       reader.onloadend =  (event)=> {
-   //          setPreview(preview=>[...preview,{base64:event.target.result}])
-   //       }
-   //    }
-   // }
 
    const handleDrop = e => {
       e.preventDefault()
@@ -88,11 +51,9 @@ const App = ()=> {
             setPreview(preview=>[...preview,{base64:event.target.result}])
          }
       }
-      console.log(file)
    }
 
    const onChange = (file)=>{
-      // let file = infil.current.files
       for(var i =0; i < file.length; i++){
          let newFile = file[i]
          var reader = new FileReader()
@@ -106,68 +67,11 @@ const App = ()=> {
    return(
       <div className="wrapper-iklan">
 
-         
          <InputFile
+            image={preview}
             onDrop={(e)=>handleDrop(e)}
             onChange={(e)=>onChange(e)}
          />
-
-
-         {/* <div  className="card-multy-file-input">
-            <div className="body-multy-file">
-               <div className="body-image-preview">
-                  {
-                     preview.map((item,i)=>(
-                        <div className="card-items-preview-image" key={i}>
-                           <div className="item-image-box" style={{backgroundImage:`url(${item.base64})`}}>
-                              <div className="icon-delete-preview" onClick={()=>alert('tes')}>
-                                 <span>X</span>
-                              </div>
-                           </div>
-                        </div>
-                     ))
-                  }
-
-                  {
-                     preview.length < 5 &&
-                     <div className="card-items-preview-image">
-                        <div className="item-non-image-box"
-                        onDrop={e => handleDrop(e)}
-                        onDragOver={e => handleAction(e)}
-                        onDragEnter={e => handleAction(e)}
-                        onDragLeave={e => handleAction(e)}
-                        onClick={(e) => infil.current.click(e)}
-                        >
-                           <div className="icon-non-preview">
-                              <span>gambar produk</span>
-                           </div>
-                        </div>
-                     </div>
-                  }
-               </div>
-               <input
-                  multiple={true}
-                  ref={infil}
-                  type="file"
-                  className="input-multy-type-file"
-                  onDrop={e => handleDrop(e)}
-
-                  onDragOver={e => handleAction(e)}
-                  onDragEnter={e => handleAction(e)}
-                  onDragLeave={e => handleAction(e)}
-
-                  onChange={(e)=> onChange(e)}
-               />
-
-               <div className="text-helper-input-file">
-                  <span>Tarik dan letakkan di sini</span>
-               </div>
-            </div>
-            <div className="footer-multy-file"
-               onClick={() => infil.current.click()}>
-               <span>Cari gambar</span>
-            </div>
-         </div> */}
 
          <InputSelect 
             show={show}
@@ -188,11 +92,17 @@ const App = ()=> {
          value={prodValue}
          placeholder="Nama produk"
          onChange={(v)=>changeProduct(v)}/>
+         
+         <TextArea
+         title="descripsi"
+         rows={8}
+         />
 
          <Button
          title="simpan"
          onClick={saveProduct}
          />
+
       </div>
    )
    

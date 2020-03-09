@@ -20,18 +20,24 @@
    border-color: $border;
 }
 
-.form-input-text:focus{
+.form-focus{
    border-color: $border-active;
 }
+// .form-input-text:focus{
+//    border-color: $border-active;
+// }
 
 .title-input-text{
    color: $text;
    font-weight: 400;
-   margin-top: 10px;
+   // margin-top: 10px;
    margin-bottom: 5px;
 }
 
 .message-error{
    font-size: 14px;
    color: $border-error;
+   // background: lightpink;
+   height: 14px;
+   // padding: 5px 0;
 }
