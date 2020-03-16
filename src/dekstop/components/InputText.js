@@ -39,7 +39,7 @@ const App = (props)=> {
             type={props.password?"password":"text"} 
             // className={`form-input-text ${props.error?"form-error":"form-nornal"} `}
             className="form-input-text"
-            onKeyDown={(e)=>props.onKeyDown(e)}
+            onKeyDown={props.onKeyDown?(e)=>props.onKeyDown(e):null}
             onFocus={cekFocus}
             onBlur={cekBlur}
             style={{borderColor:border}}

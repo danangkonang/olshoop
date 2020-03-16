@@ -1,10 +1,6 @@
-import React, { useState,useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 const App = (props)=> {
    const infil = useRef("file")
-   const [preview]=useState([])
-   useEffect(()=>{
-
-   })
 
    const handleAction = e => {
       e.preventDefault()
@@ -18,7 +14,7 @@ const App = (props)=> {
                {
                   props.image.map((item,i)=>(
                      <div className="card-items-preview-image" key={i}>
-                        <div className="item-image-box" style={{backgroundImage:`url(${item.base64})`}}>
+                        <div className="item-image-box" style={{backgroundImage:`url(${item})`}}>
                            <div className="icon-delete-preview" onClick={()=>alert('tes')}>
                               <span>X</span>
                            </div>
