@@ -48,18 +48,19 @@ const App = (props)=> {
          product_name: "Required",
          gambar:preview
       }
-      console.log(data)
+      // console.log(data)
       try{
          let res = await axios({
-            method: 'post',
+            method: 'POST',
             url: 'http://localhost:9000/post-product',
             data: data,
             headers:{
-               Autorization: `Bearer ${token}`      
+               "Content-Type":"application/json",
+               "Authorization": `Bearer ${token}`      
             }
          })
-         console.log(res)
-         props.history.push('/')
+         console.log(res.data)
+         // props.history.push('/')
       }catch(e){
          console.log(e)
       }
@@ -77,7 +78,7 @@ const App = (props)=> {
             // setPreview(preview=>[...preview,{base64:event.target.result}])
             setPreview(preview=>[...preview,event.target.result])
 
-            console.log(event.target)
+            // console.log(event.target)
          }
       }
    }

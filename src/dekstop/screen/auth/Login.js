@@ -20,7 +20,7 @@ const App = (props)=>{
             }
          })
          localStorage.setItem('token',res.data.Data.token)
-         // console.log(res)
+         console.log(res)
          props.history.push('/')
       }catch(e){
          console.log("iki error",e.response)

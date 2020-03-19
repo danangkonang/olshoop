@@ -5,38 +5,55 @@ import Card from '../components/Card'
 import axios from 'axios'
 // var MobileDetect = require('mobile-detect')
 import Footer from '../components/Footer'
-const App =()=> {
+import {useSelector, useDispatch} from 'react-redux'
+import {getAge} from '../../redux/actions/userAction'
+const App =(props)=> {
    // https://frozen-island-74204.herokuapp.com/
-   const[isLogin]=useState(false)
-   const[product,setProduct]=useState([])
-   const[token,setToken]=useState('')
+   const [isLogin]=useState(false)
+   const [product,setProduct]=useState([])
+   
+   let [userToken,setToken]=useState('tes')
 
    useEffect(()=>{
+      const getToken =async()=>{
+         try{
+            let tkn =await localStorage.getItem('token')
+            setToken(()=>tkn)
+         }catch(e){
+            console.log(e)
+         }
+      }
       getToken()
-      getProducts()
    })
 
-   const getToken =async()=>{
-      let tkn =await localStorage.getItem('token')
-      setToken(tkn)
-   }
+   const user = useSelector(state=>state.user)
+   const dispatch = useDispatch()
+   useEffect(()=>{
+      console.log(user)
+   },[user])
 
-   const getProducts = async()=>{
-      try{
-         let res = await axios({
-            method: 'get',
-            url: 'http://localhost:9000/get-products',
-            Header:{
-               Autorization: `Bearer ${token}`      
-            }
-         })
-         if(res.data!==null){
-            setProduct(res.data)
+   useEffect(()=>{
+      dispatch(getAge())
+   },[dispatch])
+
+   useEffect(()=>{
+      const getProducts = async()=>{
+         try{
+            let res = await axios({
+               method: 'get',
+               url: 'http://localhost:9000/get-products',
+               Header:{
+                  "Authorization": `Bearer ${userToken}` 
+               }
+            })
+            console.log('one',res)
+            setProduct(i=>res.data)
+         }catch(e){
+            console.log(e)
          }
-      }catch(e){
-         console.log(e)
       }
-   }
+      getProducts()
+   },[userToken])
    
    // async componentDidMount(){
    //    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)

@@ -4,7 +4,7 @@ const App = (props)=> {
       <div className="wraper-products">
          {
             props.product.map((item,i)=>(
-               <div className="box-card" key={item} >
+               <div className="box-card" key={i} >
                   <a href="/detail">
                      <div className="card-product">
                         <div className="image-product">

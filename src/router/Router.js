@@ -1,7 +1,11 @@
 import React from 'react'
 import Router from './RouterDekstop'
-// import { render } from '@testing-library/react'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import reducers from '../redux/reducers/globalReducer'
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+
+const store = createStore(reducers)
 
 const App = ()=>{
    if(isMobile){
@@ -10,7 +14,9 @@ const App = ()=>{
       )
    }else{
       return(
-         <Router/>
+         <Provider store={store}>
+            <Router/>
+         </Provider>
       )
    }
 }
