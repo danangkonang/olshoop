@@ -1,16 +1,19 @@
 import React from 'react'
 import Router from './RouterDekstop'
-import { createStore } from 'redux'
+import { createStore,applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
-import reducers from '../redux/reducers/globalReducer'
+import rootReducers from '../redux/reducers/globalReducer'
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
 
-const store = createStore(reducers)
+const store = createStore(rootReducers,applyMiddleware(thunk))
 
 const App = ()=>{
    if(isMobile){
       return(
-         <div><h1>hellow word danang</h1></div>
+         <Provider store={store}>
+            <div><h1>hellow word danang</h1></div>
+         </Provider>
       )
    }else{
       return(

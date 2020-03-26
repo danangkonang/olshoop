@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, Fragment } from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
-const App = ()=> {
+const App = (props)=> {
    const [search,setSearch]=useState(false)
    const searchProduct =()=>{
       setSearch(!search)
@@ -30,18 +30,29 @@ const App = ()=> {
             <div className="sub-colom sub-colom-right">
                <a href="/">notifikasi</a>
                <a href="/">bantuan</a>
-               <a href="/login">login</a>
-               <a href="/registrasi">daftar</a>
+               {
+                  !props.isLogin&&
+                  <Fragment>
+                     <a href="/login">login</a>
+                     <a href="/registrasi">daftar</a>
+                  </Fragment>
+               }
             </div>
          </div>
          <div className="colom">
            <div className="sub-colom-1">
                <a href="/">akun</a>
-               <a href="/">iklan</a>
+               <button onClick={
+                  async()=>{
+                  await localStorage.removeItem('token')
+               }}>
+                  keluar
+               </button>
+               {/* <a href="/">iklan</a>
                <a href="/">akun</a>
                <a href="/">iklan</a>
                <a href="/">akun</a>
-               <a href="/">iklan</a>
+               <a href="/">iklan</a> */}
            </div>
            <div className="sub-colom-2">
                <div className="search-box">

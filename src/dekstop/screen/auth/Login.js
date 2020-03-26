@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
-import axios from 'axios'
+// import axios from 'axios'
+import { useDispatch } from 'react-redux'
 import InputText from '../../components/InputText'
 import Btn from '../../components/Button'
+import {userLogin} from '../../../redux/actions/userAction'
 const App = (props)=>{
    const[email,setEmail]=useState('')
    const[password,setPassword]=useState('')
@@ -9,19 +11,21 @@ const App = (props)=>{
    const[errorPassword,setErrorPassword]=useState(false)
    const[messageEmail,setMessageEmail]=useState('')
    const[messagePassword,setMessagePassword]=useState('')
-
+   const dispatch = useDispatch()
    const login =async ()=>{
       try{
-         let res = await axios({
-            method: 'post',
-            url: 'http://localhost:9000/login',
-            data: {
-               email,password
-            }
-         })
-         localStorage.setItem('token',res.data.Data.token)
+         let res = await dispatch(userLogin({email,password}))
          console.log(res)
-         props.history.push('/')
+         // let res = await axios({
+         //    method: 'post',
+         //    url: 'http://localhost:9000/login',
+         //    data: {
+         //       email,password
+         //    }
+         // })
+         // localStorage.setItem('token',res.data.Data.token)
+         // console.log(res)
+         // props.history.push('/')
       }catch(e){
          console.log("iki error",e.response)
       }

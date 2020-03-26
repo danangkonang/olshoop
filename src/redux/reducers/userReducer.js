@@ -13,6 +13,13 @@ const reducer = (state = initialState,action)=>{
             ...state,
             age : state.age + 1
          }
+      case actionType.IS_LOGIN:
+         // console.log(action.payload)
+         return{
+            ...state,
+            // is_login:!state.is_login
+            is_login:action.payload
+         }
       default:
          return state
    }
