@@ -10,7 +10,7 @@ import {
  import Login from '../dekstop/screen/auth/Login'
  import Registrasi from '../dekstop/screen/auth/Registrasi'
  import Iklan from '../dekstop/screen/Iklan'
- import Profil from '../dekstop/screen/user/Profil'
+ import Profil from '../dekstop/screen/profil/Profil'
  import PostProduct from '../dekstop/screen/product/PostProduct'
  import ResetPassword from '../dekstop/screen/auth/ResetPassword'
  import NewPassword from '../dekstop/screen/auth/NewPassword'
