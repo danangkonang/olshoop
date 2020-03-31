@@ -65,3 +65,38 @@ hr{
    font-size: 14px;
    font-weight: 400;
 }
+
+.tentang-icon-me{
+   list-style: none;
+   display: block;
+}
+
+.tentang-icon-me li{
+   margin-bottom: 5px;
+}
+
+.tentang-icon-me a{
+   flex-direction: row;
+   text-decoration: none;
+   text-transform: capitalize;
+   color: rgba(0, 0, 0, .5);
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.icon-sosmed-footer{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.icon-footer{
+   background: rgba(0, 0, 0, .5);
+   margin-right: 5px;
+   width: 18px;
+   height: 18px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+}

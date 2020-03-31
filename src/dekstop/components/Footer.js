@@ -2,6 +2,12 @@ import React, { Fragment } from 'react'
 import {
    AiOutlineCopyright
 } from 'react-icons/ai'
+import{
+   FaFacebookF,
+   FaInstagram,
+   FaTwitter,
+   FaWhatsapp
+} from 'react-icons/fa'
 const App = ()=> {
    return(
       <Fragment>
@@ -23,35 +29,59 @@ const App = ()=> {
                <div className="title-footer">Pengguna</div>
                   <ul className="tentang-me">
                      <li><a href="/login">Sayrat memasang iklna</a></li>
-                     {/* <li><a href="/login">labore laboris</a></li>
-                     <li><a href="/login">labore laboris</a></li>
-                     <li><a href="/login">labore laboris</a></li>
-                     <li><a href="/login">labore laboris</a></li>
-                     <li><a href="/login">labore laboris</a></li> */}
                   </ul>
                </div>
                <div className="sub-footer">
                <div className="title-footer">pembeli</div>
                   <ul className="tentang-me">
                      <li><a href="/login">labore laboris</a></li>
-                     {/* <li><a href="/login">labore laboris</a></li>
-                     <li><a href="/login">labore laboris</a></li>
-                     <li><a href="/login">labore laboris</a></li>
-                     <li><a href="/login">labore laboris</a></li>
-                     <li><a href="/login">labore laboris</a></li> */}
                   </ul>
                </div>
             </div>
             <div className="footer-right">
-               
                <div className="sub-footer">
-               <div className="title-footer">Ikuti kani</div>
-                  <ul className="tentang-me">
-                     <li><a href="/login">facebook</a></li>
-                     <li><a href="/login">instagram</a></li>
-                     <li><a href="/login">youtube</a></li>
-                     <li><a href="/login">tweeter</a></li>
-                     <li><a href="/login">linkedin</a></li>
+               <div className="title-footer">Ikuti kami</div>
+                  <ul className="tentang-icon-me">
+                     <li>
+                        <a href="/" className="icon-sosmed-footer">
+                           <div className="icon-footer">
+                              <FaInstagram size={12} color="#fff"/>
+                           </div>
+                           <div>
+                              instagram
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/" className="icon-sosmed-footer">
+                           <div className="icon-footer">
+                              <FaFacebookF size={12} color="#fff"/>
+                           </div>
+                           <div>
+                              facebook
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/" className="icon-sosmed-footer">
+                           <div className="icon-footer">
+                              <FaTwitter size={12} color="#fff"/>
+                           </div>
+                           <div>
+                              twitter
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/" className="icon-sosmed-footer">
+                           <div className="icon-footer">
+                              <FaWhatsapp size={12} color="#fff"/>
+                           </div>
+                           <div>
+                              whatsapp
+                           </div>
+                        </a>
+                     </li>
                   </ul>
                </div>
                <div className="sub-footer-right">
@@ -61,7 +91,7 @@ const App = ()=> {
          </div>
          <div className="sub-bottom">
             <AiOutlineCopyright/>
-            <div>hakcipta di lindungi domoin.com</div>
+            <div>hakcipta di lindungi ceodeaja.com</div>
          </div>
       </div>
       </Fragment>

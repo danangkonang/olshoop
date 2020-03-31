@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
-// import axios from 'axios'
+import axios from 'axios'
 import { useDispatch } from 'react-redux'
 import InputText from '../../components/InputText'
 import Btn from '../../components/Button'
-import {userLogin} from '../../../redux/actions/userAction'
+// import {userLogin} from '../../../redux/actions/userAction'
 const App = (props)=>{
    const[email,setEmail]=useState('')
    const[password,setPassword]=useState('')
@@ -14,20 +14,20 @@ const App = (props)=>{
    const dispatch = useDispatch()
    const login =async ()=>{
       try{
-         let res = await dispatch(userLogin({email,password}))
-         console.log(res)
-         // let res = await axios({
-         //    method: 'post',
-         //    url: 'http://localhost:9000/login',
-         //    data: {
-         //       email,password
-         //    }
-         // })
-         // localStorage.setItem('token',res.data.Data.token)
+         // let res = await dispatch(userLogin({email,password}))
          // console.log(res)
+         let res = await axios({
+            method: 'post',
+            url: 'http://localhost:9000/login',
+            data: {
+               email,password
+            }
+         })
+         // localStorage.setItem('token',res.data.Data.token)
+         console.log(res)
          // props.history.push('/')
       }catch(e){
-         console.log("iki error",e.response)
+         console.log("iki error",e.response.data.error.message)
       }
       
    }
@@ -54,8 +54,6 @@ const App = (props)=>{
          login()
       }
    }
-
-
 
    return(
       <div className="wrapper-login">
@@ -103,7 +101,7 @@ const App = (props)=>{
                      />
 
                      <div className="text-link-auth">
-                        <span>lupa password?<a href="/confirm-email"> Reset password</a></span>
+                        <span>lupa password?<a href="/reset-password"> Reset password</a></span>
                      </div>
                      <div className="text-link-auth">
                         <span>Belum mempunyai akun?<a href="/registrasi"> Daftar disini</a></span>

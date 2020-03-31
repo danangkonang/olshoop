@@ -60,7 +60,7 @@ const App = (props)=> {
                   <input 
                   onFocus={searchProduct} 
                   onBlur={searchProduct}
-                  type="text" className="input-search-box" placeholder="search" />
+                  type="text" className="input-search-box" placeholder="ketik nama barang" />
                </div>
                {
                   boxSeacrh()

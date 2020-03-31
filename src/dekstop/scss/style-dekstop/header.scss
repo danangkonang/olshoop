@@ -32,10 +32,6 @@
    font-weight: 400;
 }
 
-
-
-
-
 .sub-colom-1{
    flex: 1;
 }
@@ -48,9 +44,7 @@
 
 .box-auto-sugest-container{
    position: absolute;
-   // background: lime;
    width: 100%;
-   // min-height: 240px;
    left: 0;
    top:45px;
    padding: 5px;
@@ -97,11 +91,16 @@
    padding: 8px 15px 8px 40px;
    box-sizing: border-box;
    border: 2px solid #dddddd;
-   color: #aaaaaa;
+   color: rgba(0,0,0,.5);
    font-size: 18px;
    outline: none;
    border-radius: 5px;
    min-width: 400px;
+}
+
+.input-search-box::placeholder{
+   color: rgba(0, 0, 0, .2);
+   font-weight: 400;
 }
 
 .icon-seacrch{

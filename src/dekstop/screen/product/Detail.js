@@ -1,4 +1,4 @@
-import React, {  } from 'react'
+import React from 'react'
 import{
    FaFacebookF,
    FaInstagram,
@@ -35,8 +35,6 @@ const Detail = ()=> {
                      <p className="name-product">Ea voluptate laborum fugiat laborum enim amet id laborum id nostrud culpa nulla exercitation in.</p>
                      <p className="prince-product">Rp. 200.000</p>
                   </div>
-
-
 
                   <div className="product-detail-list">
                      <div className="cart-list">

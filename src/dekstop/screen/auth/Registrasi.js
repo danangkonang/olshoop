@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-// import axios from 'axios'
+import axios from 'axios'
 import InputText from '../../components/InputText'
 import Btn from '../../components/Button'
 const App = ()=>{
@@ -8,11 +8,19 @@ const App = ()=>{
    const[error]=useState(false)
    const[message]=useState('')
 
-   const login = ()=>{
-      const data ={
-         email,password
+   const login = async()=>{
+      try{
+         let res = await axios({
+            method: 'post',
+            url: 'http://localhost:9000/registrasi',
+            data: {
+               email,password
+            }
+         })
+         console.log(res)
+      }catch(e){
+         console.log("iki error",e.response.data.error.message)
       }
-      console.log(data)
    }
    return(
       <div className="wrapper-login">
@@ -46,7 +54,6 @@ const App = ()=>{
                      </div>
                      <Btn
                         block={true}
-                        outline={true}
                         title="Kirim"
                         onClick={login}
                      />

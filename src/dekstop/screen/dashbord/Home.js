@@ -1,11 +1,11 @@
 import React, { useState,Fragment,useEffect } from 'react'
-import Header from '../components/Header'
-import Menu from '../components/Menu'
-import Card from '../components/Card'
+import Header from '../../components/Header'
+import Menu from '../../components/Menu'
+import Card from '../../components/Card'
 import axios from 'axios'
-import Footer from '../components/Footer'
+import Footer from '../../components/Footer'
 import {useSelector, useDispatch} from 'react-redux'
-import {userLogin} from '../../redux/actions/userAction'
+import {userLogin} from '../../../redux/actions/userAction'
 const App =()=> {
    // const [isLogin]=useState(false)
    const [product,setProduct]=useState([])
@@ -28,10 +28,6 @@ const App =()=> {
       getToken()
    },[dispatch])
 
-   // useEffect(()=>{
-   //    dispatch(getAge())
-   // },[dispatch])
-   
    useEffect(()=>{
       console.log(user)
    },[user])
@@ -46,7 +42,7 @@ const App =()=> {
                   "Authorization": `Bearer ${userToken}` 
                }
             })
-            console.log('one',res)
+            console.log('one',res.data)
             setProduct(i=>res.data)
          }catch(e){
             console.log(e)

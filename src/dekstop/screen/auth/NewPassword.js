@@ -4,16 +4,16 @@ import Btn from '../../components/Button'
 const App = ()=> {
    return(
       <div className="wrapper-reset-password">
-         <div className="title-reset-password">
-            kami akan mengirim link untuk mereset password ke email
-         </div>
          <div className="card-reset-form">
             <InputText
-            title="Email"
+            title="Password baru"
+            />
+            <InputText
+            title="Ulangi password"
             />
             <Btn
             block={true}
-            title="Kirim"
+            title="Simpan"
             />
          </div>
       </div>
