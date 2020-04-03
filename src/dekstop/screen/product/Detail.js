@@ -17,13 +17,13 @@ const Detail = ()=> {
                   <div className="image-menu">
                      <img src="https://www.otomotifer.com/wp-content/uploads/2019/04/Mobil-City-Car-Murah-Honda.jpg" alt="mobile" style={{height:'100%',width:'100%'}}/>
                   </div>
-                  <div className="image-menu" style={{background:'pink'}}>
+                  <div className="image-menu">
                      <img src="https://www.otomotifer.com/wp-content/uploads/2019/04/Mobil-City-Car-Murah-Honda.jpg" alt="mobile" style={{height:'100%',width:'100%'}}/>
                   </div>
                   <div className="image-menu">
                      <img src="https://www.otomotifer.com/wp-content/uploads/2019/04/Mobil-City-Car-Murah-Honda.jpg" alt="mobile" style={{height:'100%',width:'100%'}}/>
                   </div>
-                  <div className="image-menu" style={{background:'pink'}}>
+                  <div className="image-menu">
                      <img src="https://www.otomotifer.com/wp-content/uploads/2019/04/Mobil-City-Car-Murah-Honda.jpg" alt="mobile" style={{height:'100%',width:'100%'}}/>
                   </div>
                </div>
@@ -77,10 +77,9 @@ const Detail = ()=> {
                            Ipsum aliquip laborum fugiat non nulla tempor sit.
                         </div>
                      </div>
-
                   </div>
-                  
                </div>
+               
                <div className="footer-list-product">
                   <div className="text-share">
                      <span>Share</span>
@@ -105,10 +104,10 @@ const Detail = ()=> {
          </div>
 
          <div className="col-tex-description">
-            <p>
-               <span>Descripsi</span>
+            <p className="description-product">
+               <span>Descripsi:</span>
             </p>
-            <p>
+            <p className="text-description-product">
                Incididunt culpa minim anim Lorem adipisicing et cillum qui. Sit quis velit in cupidatat ut. Amet duis sint exercitation exercitation pariatur ad duis ut. Cillum veniam consectetur minim Lorem officia laboris anim excepteur et nulla.
                Dolore tempor ut anim nulla aliquip id sint laborum reprehenderit esse laborum fugiat qui. Voluptate amet aliqua sunt laboris non enim occaecat eu excepteur ea adipisicing eiusmod ut eiusmod. Dolor ex elit do et occaecat non. Aliquip enim qui adipisicing ipsum adipisicing sit excepteur proident minim. Veniam elit proident culpa nisi tempor commodo fugiat sint eiusmod consectetur eiusmod deserunt qui esse. Amet sunt occaecat qui nulla elit eiusmod fugiat excepteur. Sit qui duis in exercitation consequat consectetur culpa do Lorem deserunt esse tempor ut. Non sunt minim dolore labore laborum fugiat proident magna eu cillum nostrud Lorem. Magna eiusmod cillum duis pariatur fugiat est deserunt proident ullamco. Est irure nisi excepteur in ad incididunt qui ad aliquip nisi ullamco est in. Incididunt laborum deserunt aliquip adipisicing nulla excepteur minim id consequat ipsum cupidatat consequat. Ullamco deserunt pariatur ad aliquip enim in elit. Excepteur enim ipsum irure id aliquip aute. Eiusmod non veniam quis ipsum consequat velit officia est id irure. Mollit enim consequat exercitation non eu culpa velit irure ex laboris et.
             </p>

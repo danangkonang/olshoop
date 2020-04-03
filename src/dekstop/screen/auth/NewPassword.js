@@ -6,15 +6,12 @@ const App = ()=> {
       <div className="wrapper-reset-password">
          <div className="card-reset-form">
             <InputText
-            title="Password baru"
-            />
+               title="Password baru"/>
             <InputText
-            title="Ulangi password"
-            />
+               title="Ulangi password"/>
             <Btn
-            block={true}
-            title="Simpan"
-            />
+               block={true}
+               title="Simpan"/>
          </div>
       </div>
    )

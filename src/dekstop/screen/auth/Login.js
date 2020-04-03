@@ -76,8 +76,7 @@ const App = (props)=>{
                               setEmail(v.target.value)
                               setErrorEmail(false)
                            }}
-                           onKeyDown={(e,refName)=>_handelEnter(e,refName)}
-                        />
+                           onKeyDown={(e,refName)=>_handelEnter(e,refName)}/>
                      </div>
                      <div className="form-input">
                         <InputText
@@ -90,15 +89,13 @@ const App = (props)=>{
                               setPassword(v.target.value)
                               setErrorPassword(false)
                            }}
-                           onKeyDown={(e)=>_handelEnter(e)}
-                        />
+                           onKeyDown={(e)=>_handelEnter(e)}/>
                      </div>
                      <Btn
                         block={true}
                         outline={false}
                         title="Masuk"
-                        onClick={login}
-                     />
+                        onClick={_validasi}/>
 
                      <div className="text-link-auth">
                         <span>lupa password?<a href="/reset-password"> Reset password</a></span>

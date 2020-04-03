@@ -91,7 +91,7 @@ const App = ()=> {
          </div>
          <div className="sub-bottom">
             <AiOutlineCopyright/>
-            <div>hakcipta di lindungi ceodeaja.com</div>
+            <div className="text-copy-right"> hakcipta di lindungi ceodeaja.com</div>
          </div>
       </div>
       </Fragment>

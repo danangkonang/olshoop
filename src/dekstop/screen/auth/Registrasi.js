@@ -39,8 +39,7 @@ const App = ()=>{
                            value={email}
                            error={error}
                            message={message}
-                           onChange={(v)=>setEmail(v.target.value)}
-                        />
+                           onChange={(v)=>setEmail(v.target.value)}/>
                      </div>
                      <div className="form-input">
                         <InputText
@@ -49,14 +48,12 @@ const App = ()=>{
                            value={password}
                            error={error}
                            message={message}
-                           onChange={(v)=>setPassword(v.target.value)}
-                        />
+                           onChange={(v)=>setPassword(v.target.value)}/>
                      </div>
                      <Btn
                         block={true}
                         title="Kirim"
-                        onClick={login}
-                     />
+                        onClick={login}/>
 
                      <div className="text-link-auth">
                         <span>Sudah mempunyai akun?<a href="/login"> Login disini</a></span>

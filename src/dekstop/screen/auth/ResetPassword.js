@@ -9,12 +9,10 @@ const App = ()=> {
          </div>
          <div className="card-reset-form">
             <InputText
-            title="Email"
-            />
+               title="Email"/>
             <Btn
-            block={true}
-            title="Kirim"
-            />
+               block={true}
+               title="Kirim"/>
          </div>
       </div>
    )

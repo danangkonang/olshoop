@@ -1,17 +1,12 @@
 .wrapper-detail{
    margin-right: auto;
    margin-left:  auto;
-   background: #0e80e4;
    width: 1200px;
 }
 
 .col-product{
    height: 500px;
    display: flex;
-}
-
-.col-tex-description{
-   background: #0e80e4;
 }
 
 .box-image{
@@ -21,28 +16,34 @@
 .primary-image{
    height: 80%;
    box-sizing: border-box;
+   background: white;
 }
 
 .sub-image{
    display: flex;
-   background: white;
    height: 20%;
+   margin-top: 5px;
 }
 
 .image-menu{
    width: 25%;
-   border:1px solid rgba(0, 0, 0, .7);
    box-sizing: border-box;
+}
+
+.image-menu:hover{
+   border:1px solid rgba(0, 0, 0, .3);
+   // box-shadow: rgba(0, 0, 0, .2);
 }
 
 .box-list-detail{
    width: 60%;
-   padding-left: 10px;
    box-sizing: border-box;
 }
 
 .body-list-product{
    height: 80%;
+   background: #ffffff;
+   padding-left: 10px;
 }
 
 .product-name-header{
@@ -57,6 +58,7 @@
 .name-product{
    font-size: 25px;
    font-weight: 400;
+   color: rgba(0, 0, 0, .8);
 }
 
 .prince-product{
@@ -76,6 +78,11 @@
 
 .key-list{
    width: 15%;
+   color: rgba(0, 0, 0, .7);
+}
+
+.value-list{
+   color: rgba(0, 0, 0, .7);
 }
 
 .show-image{
@@ -86,11 +93,15 @@
 .footer-list-product{
    height: 20%;
    display: flex;
+   background: #ffffff;
+   margin-top: 5px;
+   padding-left: 10px;
 }
 
 .text-share{
    display: flex;
    align-items: center;
+   color: rgba(0, 0, 0, .7);
 }
 
 .box-icon-sosmed{
@@ -100,7 +111,7 @@
 }
 
 .share-icon-sosmed{
-   background: #ffffff;
+   background: rgba(0, 0, 0, .2);
    margin-left: 25px;
    width: 35px;
    height: 35px;
@@ -109,6 +120,22 @@
    justify-content: center;
    border-radius: 50%;
    text-decoration: none;
+}
+
+.col-tex-description{
+   margin: 20px 0;
+}
+
+.description-product{
+   color: rgba(0, 0, 0, .8);
+   font-weight: bold;
+   margin: 5px 0 5px 0;
+}
+
+.text-description-product{
+   background: #ffffff;
+   color: rgba(0, 0, 0, .7);
+   padding: 10px;
 }
 
 
