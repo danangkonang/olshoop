@@ -6,6 +6,7 @@ import axios from 'axios'
 import Footer from '../../components/Footer'
 import {useSelector, useDispatch} from 'react-redux'
 import {userLogin} from '../../../redux/actions/userAction'
+import Category from '../../components/Category'
 const App =()=> {
    // const [isLogin]=useState(false)
    const [product,setProduct]=useState([])
@@ -28,9 +29,9 @@ const App =()=> {
       getToken()
    },[dispatch])
 
-   useEffect(()=>{
-      console.log(user)
-   },[user])
+   // useEffect(()=>{
+   //    console.log(user)
+   // },[user])
 
    useEffect(()=>{
       const getProducts = async()=>{
@@ -54,7 +55,8 @@ const App =()=> {
       return(
          <Fragment>
             <Header isLogin={user.is_login}/>
-            <Menu/>
+            {/* <Menu/> */}
+            <Category/>
             <Card product={product}/>
             <Footer/>
          </Fragment>

@@ -2,7 +2,6 @@
    position: fixed;
    width: 100%;
    top: 0;
-   // background: linear-gradient( #03a5f0, #34b7f1);
    background: linear-gradient( #8E44AD, #AF7AC5);
    z-index: 1;
 }
@@ -19,6 +18,16 @@
 
 .sub-colom-left{
    justify-content: flex-start;
+   position: relative;
+}
+
+.conmtainer-download-aplikasi{
+   background: #FFFFFF;
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   top:27px;
+   z-index: 1;
 }
 
 .sub-colom-right{
@@ -26,15 +35,21 @@
    padding-right: 30px;
 }
 
-.sub-colom a{
-   text-decoration: none;
-   margin-right: 10px;
-   color: #ffffff;
-   font-weight: 400;
-}
-
 .sub-colom-1{
    flex: 1;
+   // position: relative;
+   display: flex;
+   justify-content: center;
+}
+
+.sub-colom-1 a{
+   font-weight: 600;
+   color: #FFFFFF;
+   font-size: 2em;
+   text-decoration: none;
+   // position: absolute;
+   top: -20px;
+   // background: tomato;
 }
 
 .sub-colom-2{
@@ -43,19 +58,37 @@
    position: relative;
 }
 
+.background-block-container{
+   background: rgba(0, 0, 0, .8);
+   height: 100vh;
+   position: absolute;
+   width: 100%;
+}
+
 .box-auto-sugest-container{
    position: absolute;
    width: 100%;
    left: 0;
-   top:45px;
+   top:46px;
    padding: 5px;
    box-sizing: border-box;
+   z-index: 1;
 }
 
 .box-auto-sugest-content{
-   background: #aaaaaa;
+   background: #FFFFFF;
    min-height: 140px;
-   padding: 5px;
+   padding: 5px 5px 5px 42px;
+   color: rgba(0, 0, 0, .8);
+   border-radius: 3px;
+}
+
+.box-auto-sugest-content ul{
+   list-style: none;
+}
+
+.box-auto-sugest-content ul li{
+   margin-bottom: 3px;
 }
 
 
@@ -89,19 +122,23 @@
 
 .input-search-box{
    width: 100%;
-   padding: 8px 15px 8px 40px;
+   padding: 12px 15px 12px 40px;
    box-sizing: border-box;
-   border: 2px solid #dddddd;
-   color: rgba(0,0,0,.5);
-   font-size: 18px;
+   // color: rgba(0,0,0,.5);
+   color:rgba(49,53,59,0.96);
+   // font-size: 18px;
    outline: none;
-   border-radius: 5px;
-   min-width: 400px;
+   border-radius: 3px;
+   min-width: 300px;
+   border: none;
+   font-size: 1em;
+   font-weight: 400;
 }
 
 .input-search-box::placeholder{
    color: rgba(0, 0, 0, .2);
    font-weight: 400;
+   font-size: 1em;
 }
 
 .icon-seacrch{
@@ -110,8 +147,22 @@
    transform: translateY(-50%);
    left: 10px;
    font-weight: 600;
-   cursor: pointer;
+   // cursor: pointer;
+   user-select: none;
    color: rgba(0, 0, 0, .5)
 }
 
+.sub-colom-right a{
+   font-size: 1em;
+   font-weight: 600;
+   text-decoration: none;
+   color: #ffffff;
+   margin-right: 30px;
+}
 
+.sub-colom-left a{
+   text-decoration: none;
+   margin-left: 10px;
+   color: #ffffff;
+   font-weight: 400;
+}

@@ -1,0 +1,25 @@
+.link-tombol{
+   height: 27px;
+   display: inline-block;
+   min-width: 80px;
+   font-weight: 500 !important;
+   font-size: .8em;
+   line-height: 24px;
+   border-radius: 4px;
+   position: relative;
+   cursor: pointer;
+   text-align: center;
+   box-sizing: border-box;
+}
+
+.link-outline{
+   background: transparent radial-gradient(circle,transparent 1%,transparent 1%) center/15000%;
+   border: 2px solid #FFFFFF;
+   color: #FFFFFF !important;
+}
+
+.link-default{
+   background: #FA591D radial-gradient(circle,transparent 1%,#FA591D 1%) center/15000%;
+   color: #FFFFFF;
+   border: 2px solid #FA591D;
+}

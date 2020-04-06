@@ -1,10 +1,11 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState,useEffect,Fragment} from 'react'
 import InputFile from '../../components/InputFile'
 import InputSelect from '../../components/InputSelect'
 import InputText from '../../components/InputText'
 import TextArea from '../../components/TextArea'
 import Button from '../../components/Button'
 import axios from 'axios'
+import HeaderSecondary from '../../components/HeaderSecondary'
 const App = (props)=> {
    const [preview,setPreview]=useState([])
 
@@ -95,45 +96,48 @@ const App = (props)=> {
    }
    
    return(
-      <div className="wrapper-iklan">
+      <Fragment>
+         <HeaderSecondary/>
+         <div className="wrapper-iklan">
 
-         <InputFile
-            image={preview}
-            onDrop={(e)=>handleDrop(e)}
-            onChange={(e)=>onChange(e)}
-         />
-
-         <InputSelect 
-            show={show}
-            onShow={showSelect}
-            items={category} 
-            title={selected} 
-            onSelect={(i)=>select(i)}
-            />
-         <InputSelect 
-            show={show2}
-            onShow={showSelect2}
-            items={subCategory} 
-            title={selected2} 
-            onSelect={(i)=>select2(i)}
+            <InputFile
+               image={preview}
+               onDrop={(e)=>handleDrop(e)}
+               onChange={(e)=>onChange(e)}
             />
 
-         <InputText
-         value={prodValue}
-         placeholder="Nama produk"
-         onChange={(v)=>changeProduct(v)}/>
-         
-         <TextArea
-         title="descripsi"
-         rows={8}
-         />
+            <InputSelect 
+               show={show}
+               onShow={showSelect}
+               items={category} 
+               title={selected} 
+               onSelect={(i)=>select(i)}
+               />
+            <InputSelect 
+               show={show2}
+               onShow={showSelect2}
+               items={subCategory} 
+               title={selected2} 
+               onSelect={(i)=>select2(i)}
+               />
 
-         <Button
-         title="simpan"
-         onClick={saveProduct}
-         />
+            <InputText
+            value={prodValue}
+            placeholder="Nama produk"
+            onChange={(v)=>changeProduct(v)}/>
+            
+            <TextArea
+            title="descripsi"
+            rows={8}
+            />
 
-      </div>
+            <Button
+            title="simpan"
+            onClick={saveProduct}
+            />
+
+         </div>
+      </Fragment>
    )
    
 }
